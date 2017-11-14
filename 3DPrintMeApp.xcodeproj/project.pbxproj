@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A09DF8B61FBB1A2700705C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B51FBB1A2700705C3A /* main.m */; };
+		A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B81FBB1A2700705C3A /* AppDelegate.m */; };
+		A09DF8BC1FBB1A2800705C3A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */; };
+		A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */; };
+		A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C01FBB1A2800705C3A /* Main.storyboard */; };
+		A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C31FBB1A2800705C3A /* Assets.xcassets */; };
+		A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */; };
+		A09DF8D21FBB1A2900705C3A /* _DPrintMeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */; };
+		A09DF8DD1FBB1A2A00705C3A /* _DPrintMeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A09DF8CE1FBB1A2900705C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A09DF8A91FBB1A2600705C3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A09DF8B01FBB1A2700705C3A;
+			remoteInfo = 3DPrintMeApp;
+		};
+		A09DF8D91FBB1A2A00705C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A09DF8A91FBB1A2600705C3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A09DF8B01FBB1A2700705C3A;
+			remoteInfo = 3DPrintMeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A09DF8B11FBB1A2700705C3A /* 3DPrintMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DPrintMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09DF8B51FBB1A2700705C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A09DF8B71FBB1A2700705C3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A09DF8B81FBB1A2700705C3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A09DF8BA1FBB1A2800705C3A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A09DF8BD1FBB1A2800705C3A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A09DF8C11FBB1A2800705C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A09DF8C31FBB1A2800705C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A09DF8C61FBB1A2800705C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A09DF8C81FBB1A2900705C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09DF8CD1FBB1A2900705C3A /* 3DPrintMeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DPrintMeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DPrintMeAppTests.m; sourceTree = "<group>"; };
+		A09DF8D31FBB1A2A00705C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09DF8D81FBB1A2A00705C3A /* 3DPrintMeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DPrintMeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DPrintMeAppUITests.m; sourceTree = "<group>"; };
+		A09DF8DE1FBB1A2A00705C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A09DF8AE1FBB1A2700705C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DF8CA1FBB1A2900705C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DF8D51FBB1A2A00705C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A09DF8A81FBB1A2600705C3A = {
+			isa = PBXGroup;
+			children = (
+				A09DF8B31FBB1A2700705C3A /* 3DPrintMeApp */,
+				A09DF8D01FBB1A2900705C3A /* 3DPrintMeAppTests */,
+				A09DF8DB1FBB1A2A00705C3A /* 3DPrintMeAppUITests */,
+				A09DF8B21FBB1A2700705C3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A09DF8B21FBB1A2700705C3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A09DF8B11FBB1A2700705C3A /* 3DPrintMeApp.app */,
+				A09DF8CD1FBB1A2900705C3A /* 3DPrintMeAppTests.xctest */,
+				A09DF8D81FBB1A2A00705C3A /* 3DPrintMeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A09DF8B31FBB1A2700705C3A /* 3DPrintMeApp */ = {
+			isa = PBXGroup;
+			children = (
+				A09DF8B71FBB1A2700705C3A /* AppDelegate.h */,
+				A09DF8B81FBB1A2700705C3A /* AppDelegate.m */,
+				A09DF8BA1FBB1A2800705C3A /* FirstViewController.h */,
+				A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */,
+				A09DF8BD1FBB1A2800705C3A /* SecondViewController.h */,
+				A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */,
+				A09DF8C01FBB1A2800705C3A /* Main.storyboard */,
+				A09DF8C31FBB1A2800705C3A /* Assets.xcassets */,
+				A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */,
+				A09DF8C81FBB1A2900705C3A /* Info.plist */,
+				A09DF8B41FBB1A2700705C3A /* Supporting Files */,
+			);
+			path = 3DPrintMeApp;
+			sourceTree = "<group>";
+		};
+		A09DF8B41FBB1A2700705C3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A09DF8B51FBB1A2700705C3A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A09DF8D01FBB1A2900705C3A /* 3DPrintMeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */,
+				A09DF8D31FBB1A2A00705C3A /* Info.plist */,
+			);
+			path = 3DPrintMeAppTests;
+			sourceTree = "<group>";
+		};
+		A09DF8DB1FBB1A2A00705C3A /* 3DPrintMeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */,
+				A09DF8DE1FBB1A2A00705C3A /* Info.plist */,
+			);
+			path = 3DPrintMeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A09DF8B01FBB1A2700705C3A /* 3DPrintMeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09DF8E11FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeApp" */;
+			buildPhases = (
+				A09DF8AD1FBB1A2700705C3A /* Sources */,
+				A09DF8AE1FBB1A2700705C3A /* Frameworks */,
+				A09DF8AF1FBB1A2700705C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3DPrintMeApp;
+			productName = 3DPrintMeApp;
+			productReference = A09DF8B11FBB1A2700705C3A /* 3DPrintMeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A09DF8CC1FBB1A2900705C3A /* 3DPrintMeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09DF8E41FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeAppTests" */;
+			buildPhases = (
+				A09DF8C91FBB1A2900705C3A /* Sources */,
+				A09DF8CA1FBB1A2900705C3A /* Frameworks */,
+				A09DF8CB1FBB1A2900705C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A09DF8CF1FBB1A2900705C3A /* PBXTargetDependency */,
+			);
+			name = 3DPrintMeAppTests;
+			productName = 3DPrintMeAppTests;
+			productReference = A09DF8CD1FBB1A2900705C3A /* 3DPrintMeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A09DF8D71FBB1A2A00705C3A /* 3DPrintMeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09DF8E71FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeAppUITests" */;
+			buildPhases = (
+				A09DF8D41FBB1A2A00705C3A /* Sources */,
+				A09DF8D51FBB1A2A00705C3A /* Frameworks */,
+				A09DF8D61FBB1A2A00705C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A09DF8DA1FBB1A2A00705C3A /* PBXTargetDependency */,
+			);
+			name = 3DPrintMeAppUITests;
+			productName = 3DPrintMeAppUITests;
+			productReference = A09DF8D81FBB1A2A00705C3A /* 3DPrintMeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A09DF8A91FBB1A2600705C3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "University of Leeds";
+				TargetAttributes = {
+					A09DF8B01FBB1A2700705C3A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					A09DF8CC1FBB1A2900705C3A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A09DF8B01FBB1A2700705C3A;
+					};
+					A09DF8D71FBB1A2A00705C3A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A09DF8B01FBB1A2700705C3A;
+					};
+				};
+			};
+			buildConfigurationList = A09DF8AC1FBB1A2600705C3A /* Build configuration list for PBXProject "3DPrintMeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A09DF8A81FBB1A2600705C3A;
+			productRefGroup = A09DF8B21FBB1A2700705C3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A09DF8B01FBB1A2700705C3A /* 3DPrintMeApp */,
+				A09DF8CC1FBB1A2900705C3A /* 3DPrintMeAppTests */,
+				A09DF8D71FBB1A2A00705C3A /* 3DPrintMeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A09DF8AF1FBB1A2700705C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */,
+				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
+				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DF8CB1FBB1A2900705C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DF8D61FBB1A2A00705C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A09DF8AD1FBB1A2700705C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */,
+				A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */,
+				A09DF8BC1FBB1A2800705C3A /* FirstViewController.m in Sources */,
+				A09DF8B61FBB1A2700705C3A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DF8C91FBB1A2900705C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DF8D21FBB1A2900705C3A /* _DPrintMeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DF8D41FBB1A2A00705C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DF8DD1FBB1A2A00705C3A /* _DPrintMeAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A09DF8CF1FBB1A2900705C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A09DF8B01FBB1A2700705C3A /* 3DPrintMeApp */;
+			targetProxy = A09DF8CE1FBB1A2900705C3A /* PBXContainerItemProxy */;
+		};
+		A09DF8DA1FBB1A2A00705C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A09DF8B01FBB1A2700705C3A /* 3DPrintMeApp */;
+			targetProxy = A09DF8D91FBB1A2A00705C3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A09DF8C01FBB1A2800705C3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A09DF8C11FBB1A2800705C3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A09DF8C61FBB1A2800705C3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A09DF8DF1FBB1A2A00705C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A09DF8E01FBB1A2A00705C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A09DF8E21FBB1A2A00705C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 3DPrintMeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.-DPrintMeApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A09DF8E31FBB1A2A00705C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 3DPrintMeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.-DPrintMeApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A09DF8E51FBB1A2A00705C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = 3DPrintMeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.-DPrintMeAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DPrintMeApp.app/3DPrintMeApp";
+			};
+			name = Debug;
+		};
+		A09DF8E61FBB1A2A00705C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = 3DPrintMeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.-DPrintMeAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DPrintMeApp.app/3DPrintMeApp";
+			};
+			name = Release;
+		};
+		A09DF8E81FBB1A2A00705C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = 3DPrintMeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.-DPrintMeAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = 3DPrintMeApp;
+			};
+			name = Debug;
+		};
+		A09DF8E91FBB1A2A00705C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = 3DPrintMeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.-DPrintMeAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = 3DPrintMeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A09DF8AC1FBB1A2600705C3A /* Build configuration list for PBXProject "3DPrintMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DF8DF1FBB1A2A00705C3A /* Debug */,
+				A09DF8E01FBB1A2A00705C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09DF8E11FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DF8E21FBB1A2A00705C3A /* Debug */,
+				A09DF8E31FBB1A2A00705C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A09DF8E41FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DF8E51FBB1A2A00705C3A /* Debug */,
+				A09DF8E61FBB1A2A00705C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A09DF8E71FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DF8E81FBB1A2A00705C3A /* Debug */,
+				A09DF8E91FBB1A2A00705C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A09DF8A91FBB1A2600705C3A /* Project object */;
+}
