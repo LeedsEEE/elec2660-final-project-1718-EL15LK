@@ -191,11 +191,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvd-bI-E8D">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="8k6-UD-fgt"/>
-                                </constraints>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8H-Ob-Vyc">
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.52549019610000003" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Find the Process!">
@@ -213,27 +208,30 @@
                                     <segue destination="LMD-Pd-GXA" kind="show" id="NoV-mg-9SR"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvd-bI-E8D"/>
                         </subviews>
                         <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Lvd-bI-E8D" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="6no-tg-eIc"/>
-                            <constraint firstItem="Lvd-bI-E8D" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="BK1-yI-qih"/>
                             <constraint firstItem="bgl-tw-Txd" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="10" id="Byl-1g-QAh"/>
                             <constraint firstItem="DPW-B6-KXp" firstAttribute="top" secondItem="bgl-tw-Txd" secondAttribute="bottom" constant="20" id="ESI-jf-xiv"/>
                             <constraint firstItem="bgl-tw-Txd" firstAttribute="leading" secondItem="MHs-za-usY" secondAttribute="trailing" constant="20" id="F4F-tt-O7J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lvd-bI-E8D" secondAttribute="trailing" id="JjW-9b-N6I"/>
+                            <constraint firstItem="Lvd-bI-E8D" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="NJE-HZ-xQV"/>
                             <constraint firstItem="MHs-za-usY" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="50" id="V3B-jP-NHe"/>
-                            <constraint firstItem="Lvd-bI-E8D" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="W7l-Z1-cpW"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="n8H-Ob-Vyc" secondAttribute="bottom" constant="20" id="YiP-ez-li2"/>
-                            <constraint firstItem="Lvd-bI-E8D" firstAttribute="top" secondItem="DPW-B6-KXp" secondAttribute="bottom" constant="50" id="YqA-Pc-9Lu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DPW-B6-KXp" secondAttribute="trailing" id="hgL-M8-xGQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bgl-tw-Txd" secondAttribute="trailing" constant="51" id="jZe-0f-6wi"/>
                             <constraint firstItem="bgl-tw-Txd" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="lsX-W0-ndh"/>
                             <constraint firstItem="DPW-B6-KXp" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="mYb-td-3Qk"/>
+                            <constraint firstItem="Lvd-bI-E8D" firstAttribute="top" secondItem="DPW-B6-KXp" secondAttribute="bottom" constant="50" id="pXk-Vq-KVa"/>
                             <constraint firstItem="n8H-Ob-Vyc" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="wiD-EC-JqJ"/>
                             <constraint firstItem="bgl-tw-Txd" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="52" id="yYQ-3d-0ha"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reasoning" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="pickerReason" destination="Lvd-bI-E8D" id="9Y8-S4-uwi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -531,6 +529,6 @@
         <image name="uol-inverted.png" width="623" height="179"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iZD-ex-bhu"/>
+        <segue reference="NoV-mg-9SR"/>
     </inferredMetricsTieBreakers>
 </document>
