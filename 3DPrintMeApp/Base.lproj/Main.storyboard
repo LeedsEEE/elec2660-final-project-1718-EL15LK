@@ -10,7 +10,7 @@
         <!--Dimensions-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dimensionsTab" id="9pv-A4-QxB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -30,16 +30,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmW-3q-bYg"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0p-So-6LZ">
+                                <state key="normal" image="first"/>
+                                <connections>
+                                    <segue destination="LMD-Pd-GXA" kind="show" id="iZD-ex-bhu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="C5S-H9-wK6" secondAttribute="trailing" constant="51" id="0M2-zy-i9a"/>
+                            <constraint firstItem="C5S-H9-wK6" firstAttribute="leading" secondItem="P0p-So-6LZ" secondAttribute="trailing" constant="20" id="3E8-6M-y50"/>
                             <constraint firstItem="q7G-t2-SA4" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="45T-Wu-YI9"/>
                             <constraint firstItem="C5S-H9-wK6" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="6gr-4l-Isn"/>
+                            <constraint firstItem="P0p-So-6LZ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="50" id="Fky-6m-YYM"/>
                             <constraint firstItem="C5S-H9-wK6" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="10" id="NNS-Xq-hDK"/>
+                            <constraint firstItem="xmW-3q-bYg" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="SAQ-j1-fIH"/>
                             <constraint firstItem="q7G-t2-SA4" firstAttribute="top" secondItem="C5S-H9-wK6" secondAttribute="bottom" constant="20" id="bKJ-Hc-wkW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q7G-t2-SA4" secondAttribute="trailing" id="gWd-eu-pxI"/>
+                            <constraint firstItem="xmW-3q-bYg" firstAttribute="top" secondItem="q7G-t2-SA4" secondAttribute="bottom" constant="20" id="jCA-CS-Goh"/>
                             <constraint firstItem="q7G-t2-SA4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="ufc-Og-M1w"/>
                             <constraint firstItem="C5S-H9-wK6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="52" id="y5g-Zi-kZ9"/>
                         </constraints>
@@ -92,6 +103,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHs-za-usY">
+                                <state key="normal" image="first"/>
+                                <connections>
+                                    <segue destination="LMD-Pd-GXA" kind="show" id="NoV-mg-9SR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -99,6 +116,8 @@
                             <constraint firstItem="Lvd-bI-E8D" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="BK1-yI-qih"/>
                             <constraint firstItem="bgl-tw-Txd" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="10" id="Byl-1g-QAh"/>
                             <constraint firstItem="DPW-B6-KXp" firstAttribute="top" secondItem="bgl-tw-Txd" secondAttribute="bottom" constant="20" id="ESI-jf-xiv"/>
+                            <constraint firstItem="bgl-tw-Txd" firstAttribute="leading" secondItem="MHs-za-usY" secondAttribute="trailing" constant="20" id="F4F-tt-O7J"/>
+                            <constraint firstItem="MHs-za-usY" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="50" id="V3B-jP-NHe"/>
                             <constraint firstItem="Lvd-bI-E8D" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="W7l-Z1-cpW"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="n8H-Ob-Vyc" secondAttribute="bottom" constant="20" id="YiP-ez-li2"/>
                             <constraint firstItem="Lvd-bI-E8D" firstAttribute="top" secondItem="DPW-B6-KXp" secondAttribute="bottom" constant="50" id="YqA-Pc-9Lu"/>
@@ -166,6 +185,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqt-gV-eCz">
+                                <state key="normal" image="first"/>
+                                <connections>
+                                    <segue destination="LMD-Pd-GXA" kind="show" id="iWH-Ob-YyR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -179,6 +204,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="s7Y-36-2gp" secondAttribute="trailing" id="Mec-kA-iy7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Me4-tf-hPJ" secondAttribute="trailing" constant="51" id="Or9-0b-pRb"/>
                             <constraint firstItem="eO3-nH-mTP" firstAttribute="leading" secondItem="STR-TE-WOU" secondAttribute="leadingMargin" id="RD8-m1-aaO"/>
+                            <constraint firstItem="pqt-gV-eCz" firstAttribute="top" secondItem="FvQ-vO-WgY" secondAttribute="bottom" constant="50" id="Sg0-If-mqI"/>
+                            <constraint firstItem="Me4-tf-hPJ" firstAttribute="leading" secondItem="pqt-gV-eCz" secondAttribute="trailing" constant="20" id="WJB-36-cAp"/>
                             <constraint firstItem="s7Y-36-2gp" firstAttribute="leading" secondItem="STR-TE-WOU" secondAttribute="leadingMargin" id="acp-FG-3YD"/>
                             <constraint firstItem="eO3-nH-mTP" firstAttribute="centerX" secondItem="STR-TE-WOU" secondAttribute="centerX" id="ahZ-NX-10j"/>
                             <constraint firstItem="8yE-nD-FJd" firstAttribute="top" secondItem="s7Y-36-2gp" secondAttribute="bottom" constant="40" id="bJf-kh-rp0"/>
@@ -195,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXY-Wa-33z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="749"/>
+            <point key="canvasLocation" x="756" y="748.87556221889065"/>
         </scene>
         <!--Item-->
         <scene sceneID="m4t-jA-4SN">
@@ -326,7 +353,6 @@
         <!--Table View Controller-->
         <scene sceneID="aHp-Sc-UdX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TZ4-ge-be9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="b8V-Nf-dtH" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6xW-3T-529">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -351,6 +377,7 @@
                         <segue destination="lTb-cB-OdL" kind="showDetail" id="mNT-18-4YJ"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZ4-ge-be9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2089" y="976"/>
         </scene>
@@ -399,4 +426,7 @@
         <image name="second" width="30" height="30"/>
         <image name="uol-inverted.png" width="623" height="179"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NoV-mg-9SR"/>
+    </inferredMetricsTieBreakers>
 </document>
