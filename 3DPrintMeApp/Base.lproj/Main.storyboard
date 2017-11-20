@@ -326,39 +326,6 @@
             </objects>
             <point key="canvasLocation" x="756" y="748.87556221889065"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="m4t-jA-4SN">
-            <objects>
-                <viewController id="dlI-Sl-YSP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NNG-gZ-R6S"/>
-                        <viewControllerLayoutGuide type="bottom" id="YX5-5f-26V"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XZO-WH-hZk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uol-inverted.png" translatesAutoresizingMaskIntoConstraints="NO" id="eB9-h4-Mnt">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="MYR-Vb-6Gt"/>
-                                    <constraint firstAttribute="width" constant="240" id="VlQ-Z1-w4A"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="eB9-h4-Mnt" firstAttribute="centerX" secondItem="XZO-WH-hZk" secondAttribute="centerX" id="GkO-mW-Mg3"/>
-                            <constraint firstItem="eB9-h4-Mnt" firstAttribute="top" secondItem="NNG-gZ-R6S" secondAttribute="bottom" constant="10" id="iJj-Eb-ZdV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eB9-h4-Mnt" secondAttribute="trailing" constant="51" id="iac-G1-YMM"/>
-                            <constraint firstItem="eB9-h4-Mnt" firstAttribute="leading" secondItem="XZO-WH-hZk" secondAttribute="leadingMargin" constant="52" id="rAP-oQ-zaL"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ir0-rQ-4XA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MfM-hW-o1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1375" y="1377"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="m9k-lb-uTz">
             <objects>
@@ -515,7 +482,6 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="xDx-2N-c6Q" kind="relationship" relationship="viewControllers" id="vkh-s5-OJV"/>
-                        <segue destination="dlI-Sl-YSP" kind="relationship" relationship="viewControllers" id="wwB-bj-o6p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
