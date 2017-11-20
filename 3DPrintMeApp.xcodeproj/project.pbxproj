@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A020FCC81FC30167001326D3 /* uol-inverted.png in Resources */ = {isa = PBXBuildFile; fileRef = A020FCC71FC30167001326D3 /* uol-inverted.png */; };
 		A09DF8B61FBB1A2700705C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B51FBB1A2700705C3A /* main.m */; };
 		A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B81FBB1A2700705C3A /* AppDelegate.m */; };
 		A09DF8BC1FBB1A2800705C3A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */; };
 		A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */; };
-		A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C01FBB1A2800705C3A /* Main.storyboard */; };
+		A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C01FBB1A2800705C3A /* Main.storyboard */; settings = {ASSET_TAGS = (kjhj, ); }; };
 		A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C31FBB1A2800705C3A /* Assets.xcassets */; };
 		A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */; };
 		A09DF8D21FBB1A2900705C3A /* _DPrintMeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A020FCC71FC30167001326D3 /* uol-inverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uol-inverted.png"; sourceTree = "<group>"; };
 		A09DF8B11FBB1A2700705C3A /* 3DPrintMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DPrintMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DF8B51FBB1A2700705C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A09DF8B71FBB1A2700705C3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		A09DF8B31FBB1A2700705C3A /* 3DPrintMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				A020FCC71FC30167001326D3 /* uol-inverted.png */,
 				A09DF8B71FBB1A2700705C3A /* AppDelegate.h */,
 				A09DF8B81FBB1A2700705C3A /* AppDelegate.m */,
 				A09DF8BA1FBB1A2800705C3A /* FirstViewController.h */,
@@ -207,6 +210,9 @@
 		A09DF8A91FBB1A2600705C3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					kjhj,
+				);
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "University of Leeds";
 				TargetAttributes = {
@@ -252,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */,
+				A020FCC81FC30167001326D3 /* uol-inverted.png in Resources */,
 				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
 				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
 			);
@@ -513,6 +520,7 @@
 				A09DF8E31FBB1A2A00705C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A09DF8E41FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				A09DF8E61FBB1A2A00705C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A09DF8E71FBB1A2A00705C3A /* Build configuration list for PBXNativeTarget "3DPrintMeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +538,7 @@
 				A09DF8E91FBB1A2A00705C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

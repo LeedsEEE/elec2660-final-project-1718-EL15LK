@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -134,24 +135,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-Zu-zxB">
-                                <frame key="frameInset" minX="164" minY="357" width="46" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFK-K0-7cV">
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.52549019610000003" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Learn More!">
+                                    <color key="titleColor" red="1" green="0.82745098039999998" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="b8V-Nf-dtH" kind="show" id="dqv-Wi-d4L"/>
+                                    <segue destination="b8V-Nf-dtH" kind="show" id="1zm-MG-5HY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFK-K0-7cV">
-                                <frame key="frameInset" minX="164" minY="272" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the 3DPrintMe app!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stm-3k-bq3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here to learn more about the different processes and materials in 3D Printing!" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4B-BG-DdN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="mxv-Z2-6vW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.32156862749999998" green="0.3803921569" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here to start the suggestion process!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPU-3S-e84">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.32156862749999998" green="0.3803921569" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uol-inverted.png" translatesAutoresizingMaskIntoConstraints="NO" id="EOK-sS-HeR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0eq-5K-JuD"/>
+                                    <constraint firstAttribute="width" constant="240" id="nTo-7T-cgP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-Zu-zxB">
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.52549019610000003" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Started!">
+                                    <color key="titleColor" red="1" green="0.82745098039999998" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="dxB-WM-Jtk"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="qnZ-3J-L54"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="aPU-3S-e84" secondAttribute="trailing" id="2d7-JJ-LRC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EOK-sS-HeR" secondAttribute="trailing" constant="51" id="5Md-EQ-bOt"/>
+                            <constraint firstItem="aPU-3S-e84" firstAttribute="top" secondItem="rFK-K0-7cV" secondAttribute="bottom" constant="40" id="B8S-L1-hQf"/>
+                            <constraint firstItem="EOK-sS-HeR" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="BdS-IE-ifH"/>
+                            <constraint firstItem="h0Z-Zu-zxB" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="Imz-l3-Wo4"/>
+                            <constraint firstItem="p4B-BG-DdN" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="MzT-fV-yys"/>
+                            <constraint firstItem="p4B-BG-DdN" firstAttribute="top" secondItem="Stm-3k-bq3" secondAttribute="bottom" constant="75" id="NNk-zJ-Zm5"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Stm-3k-bq3" secondAttribute="leading" id="OII-3c-2vK"/>
+                            <constraint firstItem="EOK-sS-HeR" firstAttribute="leading" secondItem="Ava-pa-o87" secondAttribute="leadingMargin" constant="52" id="Q9k-af-YaK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p4B-BG-DdN" secondAttribute="trailing" id="QwN-PG-6Jk"/>
+                            <constraint firstItem="EOK-sS-HeR" firstAttribute="top" secondItem="fIF-hi-TxB" secondAttribute="bottom" constant="10" id="Y8m-rP-raz"/>
+                            <constraint firstItem="Stm-3k-bq3" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="YYA-R7-Hiq"/>
+                            <constraint firstItem="h0Z-Zu-zxB" firstAttribute="top" secondItem="aPU-3S-e84" secondAttribute="bottom" constant="10" id="a5O-BC-nZD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aPU-3S-e84" secondAttribute="leading" id="eu1-gx-PhL"/>
+                            <constraint firstItem="rFK-K0-7cV" firstAttribute="top" secondItem="p4B-BG-DdN" secondAttribute="bottom" constant="10" id="gw8-XC-LzG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Stm-3k-bq3" secondAttribute="trailing" id="kEy-XE-b4n"/>
+                            <constraint firstItem="Stm-3k-bq3" firstAttribute="top" secondItem="EOK-sS-HeR" secondAttribute="bottom" constant="20" id="p1Y-ls-1SO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="p4B-BG-DdN" secondAttribute="leading" id="qwm-qe-hfK"/>
+                            <constraint firstItem="rFK-K0-7cV" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="trA-O9-eaP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ef1-0o-eJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,6 +209,7 @@
         <!--Table View Controller-->
         <scene sceneID="aHp-Sc-UdX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZ4-ge-be9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="b8V-Nf-dtH" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6xW-3T-529">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -185,9 +234,8 @@
                         <segue destination="lTb-cB-OdL" kind="showDetail" id="mNT-18-4YJ"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TZ4-ge-be9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2103" y="988"/>
+            <point key="canvasLocation" x="-2089" y="976"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZJI-jr-oty">
@@ -232,5 +280,6 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="uol-inverted.png" width="623" height="179"/>
     </resources>
 </document>
