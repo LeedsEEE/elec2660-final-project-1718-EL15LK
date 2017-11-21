@@ -1,23 +1,24 @@
 //
-//  ThirdTabControllerViewController.m
+//  DetailViewController.m
 //  3DPrintMeApp
 //
 //  Created by Lakshit Kumar [el15lk] on 21/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "ThirdTabControllerViewController.h"
+#import "DetailViewController.h"
 
-@interface ThirdTabControllerViewController ()
+@interface DetailViewController ()
 
 @end
 
-@implementation ThirdTabControllerViewController
+@implementation DetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.processName.text = self.process.name;
 }
 
 - (void)didReceiveMemoryWarning {
