@@ -60,6 +60,8 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     return choices.count;                                                        //  Number of Rows is determined by the array size
 }
+
+
 - (IBAction)testButton:(id)sender {                                                 //yagnesh animation channel
     
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"http://www.l-kumar.com"]];
