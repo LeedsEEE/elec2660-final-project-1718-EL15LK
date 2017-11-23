@@ -238,6 +238,34 @@
             </objects>
             <point key="canvasLocation" x="-101" y="108"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="om3-5e-WKJ">
+            <objects>
+                <viewController id="8mN-wB-EuW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F6W-j6-sEX"/>
+                        <viewControllerLayoutGuide type="bottom" id="e4F-Vi-5rr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9xe-2Z-Dzx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cnu-kc-lvH">
+                                <frame key="frameInset" minX="71" minY="177" width="232" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIr-fk-EEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682.60869565217399" y="107.60869565217392"/>
+        </scene>
         <!--Suggestion-->
         <scene sceneID="UL3-Mw-LUv">
             <objects>

@@ -12,5 +12,6 @@
 @interface DataModel : NSObject
 
 @property (strong,nonatomic) NSMutableArray *processes;
+@property (strong,nonatomic) NSMutableArray *materials;
 
 @end

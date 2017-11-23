@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A020FCC81FC30167001326D3 /* uol-inverted.png in Resources */ = {isa = PBXBuildFile; fileRef = A020FCC71FC30167001326D3 /* uol-inverted.png */; };
+		A085C8EB1FC73AA300041D5B /* material.m in Sources */ = {isa = PBXBuildFile; fileRef = A085C8EA1FC73AA300041D5B /* material.m */; };
 		A09DF8B61FBB1A2700705C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B51FBB1A2700705C3A /* main.m */; };
 		A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B81FBB1A2700705C3A /* AppDelegate.m */; };
 		A09DF8BC1FBB1A2800705C3A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */; };
 		A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */; };
-		A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C01FBB1A2800705C3A /* Main.storyboard */; settings = {ASSET_TAGS = (kjhj, ); }; };
+		A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C01FBB1A2800705C3A /* Main.storyboard */; };
 		A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C31FBB1A2800705C3A /* Assets.xcassets */; };
 		A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */; };
 		A09DF8D21FBB1A2900705C3A /* _DPrintMeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		A020FCC71FC30167001326D3 /* uol-inverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uol-inverted.png"; sourceTree = "<group>"; };
+		A085C8E91FC73AA300041D5B /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		A085C8EA1FC73AA300041D5B /* material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = material.m; sourceTree = "<group>"; };
 		A09DF8B11FBB1A2700705C3A /* 3DPrintMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DPrintMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DF8B51FBB1A2700705C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A09DF8B71FBB1A2700705C3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A085C8ED1FC73AD500041D5B /* Data Model Related */ = {
+			isa = PBXGroup;
+			children = (
+				A085C8E91FC73AA300041D5B /* material.h */,
+				A085C8EA1FC73AA300041D5B /* material.m */,
+				A0C79AF91FC44C4B00379BE5 /* process.h */,
+				A0C79AFA1FC44C4B00379BE5 /* process.m */,
+				A0C79AFC1FC459D800379BE5 /* DataModel.h */,
+				A0C79AFD1FC459D800379BE5 /* DataModel.m */,
+			);
+			name = "Data Model Related";
+			sourceTree = "<group>";
+		};
+		A085C8EE1FC73B0500041D5B /* Multimedia Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A020FCC71FC30167001326D3 /* uol-inverted.png */,
+			);
+			name = "Multimedia Resources";
+			sourceTree = "<group>";
+		};
+		A085C8EF1FC73B1D00041D5B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */,
+				A09DF8C01FBB1A2800705C3A /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A085C8F01FC73B3C00041D5B /* Tab View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0C79AF61FC449D600379BE5 /* ThirdTabControllerViewController.h */,
+				A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */,
+				A09DF8BD1FBB1A2800705C3A /* SecondViewController.h */,
+				A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */,
+				A09DF8BA1FBB1A2800705C3A /* FirstViewController.h */,
+				A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */,
+			);
+			name = "Tab View Controllers";
+			sourceTree = "<group>";
+		};
+		A085C8F11FC73B5700041D5B /* Learning Centre View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0B85D621FC462C6006ABC1E /* LearningCentreTableViewController.h */,
+				A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */,
+				A0B85D651FC469E6006ABC1E /* DetailViewController.h */,
+				A0B85D661FC469E6006ABC1E /* DetailViewController.m */,
+			);
+			name = "Learning Centre View Controllers";
+			sourceTree = "<group>";
+		};
 		A09DF8A81FBB1A2600705C3A = {
 			isa = PBXGroup;
 			children = (
@@ -121,26 +178,14 @@
 		A09DF8B31FBB1A2700705C3A /* 3DPrintMeApp */ = {
 			isa = PBXGroup;
 			children = (
-				A020FCC71FC30167001326D3 /* uol-inverted.png */,
+				A085C8F11FC73B5700041D5B /* Learning Centre View Controllers */,
+				A085C8F01FC73B3C00041D5B /* Tab View Controllers */,
+				A085C8EF1FC73B1D00041D5B /* Storyboards */,
+				A085C8EE1FC73B0500041D5B /* Multimedia Resources */,
+				A085C8ED1FC73AD500041D5B /* Data Model Related */,
 				A09DF8B71FBB1A2700705C3A /* AppDelegate.h */,
 				A09DF8B81FBB1A2700705C3A /* AppDelegate.m */,
-				A09DF8BA1FBB1A2800705C3A /* FirstViewController.h */,
-				A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */,
-				A09DF8BD1FBB1A2800705C3A /* SecondViewController.h */,
-				A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */,
-				A09DF8C01FBB1A2800705C3A /* Main.storyboard */,
-				A0B85D651FC469E6006ABC1E /* DetailViewController.h */,
-				A0B85D661FC469E6006ABC1E /* DetailViewController.m */,
-				A0B85D621FC462C6006ABC1E /* LearningCentreTableViewController.h */,
-				A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */,
-				A0C79AFC1FC459D800379BE5 /* DataModel.h */,
-				A0C79AFD1FC459D800379BE5 /* DataModel.m */,
-				A0C79AF61FC449D600379BE5 /* ThirdTabControllerViewController.h */,
-				A0C79AF91FC44C4B00379BE5 /* process.h */,
-				A0C79AFA1FC44C4B00379BE5 /* process.m */,
-				A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */,
 				A09DF8C31FBB1A2800705C3A /* Assets.xcassets */,
-				A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */,
 				A09DF8C81FBB1A2900705C3A /* Info.plist */,
 				A09DF8B41FBB1A2700705C3A /* Supporting Files */,
 			);
@@ -310,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A085C8EB1FC73AA300041D5B /* material.m in Sources */,
 				A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */,
 				A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */,
 				A0B85D671FC469E6006ABC1E /* DetailViewController.m in Sources */,
