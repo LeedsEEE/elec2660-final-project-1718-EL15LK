@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *lengthLabel;                 //Labels and Text Fields that will be used for dimensions input
 @property (weak, nonatomic) IBOutlet UILabel *widthLabel;

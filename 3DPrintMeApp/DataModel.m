@@ -16,7 +16,10 @@
     self = [super init];
     if (self) {
         
-        self.processes = [NSMutableArray array];                    //Specific information for each of the processes are from www.sculpteo.com
+#pragma mark processes data model
+//Specific information for each of the processes are from www.sculpteo.com
+        
+        self.processes = [NSMutableArray array];
         
         process *FDM = [[process alloc] init];
         FDM.name = @"Fused Deposition Modelling";
@@ -46,7 +49,84 @@
         [self.processes addObject:SLA]; //index 1
         [self.processes addObject:SLS]; //index 2
         
-        self.materials = [NSMutableArray array];                    //Specific information for each of the materials are from www.3dhubs.com & all3dp.com
+        
+#pragma mark materials data model
+//Specific information for each of the materials are from www.3dhubs.com & all3dp.com
+        
+        self.materials = [NSMutableArray array];
+        
+        material *PLA = [[material alloc] init];
+        PLA.name = @"Polylactic Acid (PLA)";
+        PLA.cost = @"$";
+        PLA.process = @"FDM";
+        PLA.quickinfo = @"PLA is the most popular 3D printer filament for FDM machines. It is a more environmentally friendly material than most 3D printer filaments.";
+        PLA.strength = @"High";
+        PLA.flexibility = @"Low";
+        PLA.durability = @"Medium";
+        
+        material *ABS = [[material alloc]	init];
+        ABS.name = @"Acrylonitrile Butadiene Styrene (ABS)";
+        ABS.cost = @"$";
+        ABS.process = @"FDM";
+        ABS.quickinfo = @"ABS is a very durable and high temperature-tolerant material. It is commonly used in consumer products.";
+        ABS.strength = @"High";
+        ABS.flexibility = @"Medium";
+        ABS.durability = @"High";
+
+        material *PETg = [[material alloc]	init];
+        PETg.name = @"Polyethylene Terephthalate (PET)";
+        PETg.cost = @"$";
+        PETg.process = @"FDM";
+        PETg.quickinfo = @"PETg strikes the middle ground between PLA and ABS. It is an all-rounder material that has good impact resistance.";
+        PETg.strength = @"High";
+        PETg.flexibility = @"Medium";
+        PETg.durability = @"High";
+        
+        material *Nylon = [[material alloc]	init];
+        Nylon.name = @"Nylon";
+        Nylon.cost = @"$$";
+        Nylon.process = @"FDM, SLS";
+        Nylon.quickinfo = @"Nylon is a synthetic polymer that has many industrial applications. As it has such good properties, it is usually used to make tools, functional prototypes and mechanical parts.";
+        Nylon.strength = @"High";
+        Nylon.flexibility = @"High";
+        Nylon.durability = @"High";
+        
+        material *TPU = [[material alloc]	init];
+        TPU.name = @"Thermoplastic Polyurethane (TPU)";
+        TPU.cost = @"$";
+        TPU.process = @"FDM";
+        TPU.quickinfo = @"TPU is a plastic with rubber-like qualities, making it flexible and durable. It is commonly used for toys, phone cases and wearables.";
+        TPU.strength = @"Medium";
+        TPU.flexibility = @"Very High";
+        TPU.durability = @"Very High";
+        
+        material *PC = [[material alloc]	init];
+        PC.name = @"Polycarbonate (PC)";
+        PC.cost = @"$$";
+        PC.process = @"FDM";
+        PC.quickinfo = @"PC is extremely durable while being impact and heat resistant. It sees use in bullet proof glass, scuba masks and electronic display screens.";
+        PC.strength = @"Very High";
+        PC.flexibility = @"Medium";
+        PC.durability = @"Very High";
+        
+        material *ASA = [[material alloc]	init];
+        ASA.name = @"Acrylonitrile Styrene Acrylate (ASA)";
+        ASA.cost = @"$";
+        ASA.process = @"FDM";
+        ASA.quickinfo = @"ASA is a strong, rigid material that is extremely resistant to chemical exposure and heat. It is primarily used in the automotive industry.";
+        ASA.strength = @"High";
+        ASA.flexibility = @"Medium";
+        ASA.durability = @"High";
+
+        
+        [self.materials addObject:PLA];     //index 0
+        [self.materials addObject:ABS];     //index 1
+        [self.materials addObject:PETg];    //index 2
+        [self.materials addObject:Nylon];   //index 3
+        [self.materials addObject:TPU];     //index 4
+        [self.materials addObject:PC];      //index 5
+        [self.materials addObject:ASA];     //index 6
+        
     }
     return self;
 }

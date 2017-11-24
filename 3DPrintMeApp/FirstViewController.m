@@ -21,8 +21,8 @@
     self.volumeLabel.hidden = true;                                //Switch is turned off by default (dimensions input)
     self.volumeTextField.hidden = true;                            //So hide all elements that belong to volume input
     
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -56,5 +56,14 @@
         self.widthTextField.hidden = false;
         self.heightTextField.hidden = false;
     }
+}
+
+#pragma mark Text Field Delegate Methods
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 @end
