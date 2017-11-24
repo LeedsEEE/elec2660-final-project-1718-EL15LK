@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)(rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:208.0/255.0 green:238.0/255.0 blue:244.0/255.0 alpha:1.0]];
+    
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:136.0/255 green:169.0/255.0 blue:226.0/255.0 alpha:1.0], NSForegroundColorAttributeName,shadow,NSShadowAttributeName,[UIFont fontWithName:@"Papyrus" size:42.0],NSFontAttributeName,nil]];
+    
     return YES;
 }
 
