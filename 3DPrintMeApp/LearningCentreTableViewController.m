@@ -76,12 +76,13 @@
 #pragma mark - Data Supply
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProcessCell" forIndexPath:indexPath];
     
+    UITableViewCell *cell;
     // Configure the cell...
     
     if (indexPath.section == 0){                                                                        //processes
         
+        cell = [tableView dequeueReusableCellWithIdentifier:@"ProcessCell" forIndexPath:indexPath];
         process *tempProcess = [self.data.processes objectAtIndex:indexPath.row];
         
         cell.textLabel.text = tempProcess.name;
@@ -89,6 +90,7 @@
     
     if (indexPath.section == 1){                                                                        //materials
         
+        cell = [tableView dequeueReusableCellWithIdentifier:@"MaterialCell" forIndexPath:indexPath];
         material *tempMaterial = [self.data.materials objectAtIndex:indexPath.row];
         
         cell.textLabel.text = tempMaterial.name;
@@ -118,7 +120,20 @@
             process *tempprocess = [self.data.processes objectAtIndex: indexPath.row];
             destinationViewController.process = tempprocess;
         }
-        
     }
+
+    if ([[segue identifier] isEqualToString:@"ShowMaterialDetails"]) {
+            
+        MaterialDetailViewController *destinationViewController = [segue destinationViewController];
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        if (indexPath.section == 1) {
+            
+            material *tempmaterial = [self.data.materials objectAtIndex: indexPath.row];
+            destinationViewController.material = tempmaterial;
+        }
+    }
+    
 }
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DataModel.h"
 #import "DetailViewController.h"
+#import "MaterialDetailViewController.h"
 
 @interface LearningCentreTableViewController : UITableViewController
 
