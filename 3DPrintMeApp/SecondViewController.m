@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //Choices are predetermined, hence they will be stored in an array as strings
-    choices = @[@"fun",@"more fun",@"more more fun",@"fun fun fun fun",@"looking forward to the weekend"];
+    choices = @[@"Aesthetics",@"Fun Print",@"Final Product",@"Visual Prototype",@"Functional Prototype"];
     
     self.pickerReason.delegate = self;
     self.pickerReason.dataSource = self;

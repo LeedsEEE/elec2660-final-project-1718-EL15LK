@@ -13,7 +13,6 @@
 		A085C8EB1FC73AA300041D5B /* material.m in Sources */ = {isa = PBXBuildFile; fileRef = A085C8EA1FC73AA300041D5B /* material.m */; };
 		A09DF8B61FBB1A2700705C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B51FBB1A2700705C3A /* main.m */; };
 		A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B81FBB1A2700705C3A /* AppDelegate.m */; };
-		A09DF8BC1FBB1A2800705C3A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */; };
 		A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */; };
 		A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C01FBB1A2800705C3A /* Main.storyboard */; };
 		A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C31FBB1A2800705C3A /* Assets.xcassets */; };
@@ -57,8 +56,6 @@
 		A09DF8B51FBB1A2700705C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A09DF8B71FBB1A2700705C3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A09DF8B81FBB1A2700705C3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A09DF8BA1FBB1A2800705C3A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		A09DF8BD1FBB1A2800705C3A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A09DF8C11FBB1A2800705C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,8 +148,6 @@
 				A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */,
 				A09DF8BD1FBB1A2800705C3A /* SecondViewController.h */,
 				A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */,
-				A09DF8BA1FBB1A2800705C3A /* FirstViewController.h */,
-				A09DF8BB1FBB1A2800705C3A /* FirstViewController.m */,
 			);
 			name = "Tab View Controllers";
 			sourceTree = "<group>";
@@ -376,7 +371,6 @@
 				A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */,
 				A0B85D671FC469E6006ABC1E /* DetailViewController.m in Sources */,
 				A0DF16C51FC757950065488E /* topNavigationBar.m in Sources */,
-				A09DF8BC1FBB1A2800705C3A /* FirstViewController.m in Sources */,
 				A0C79AF81FC449D600379BE5 /* ThirdTabControllerViewController.m in Sources */,
 				A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */,
 				A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */,

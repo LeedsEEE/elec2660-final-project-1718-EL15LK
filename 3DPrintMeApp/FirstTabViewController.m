@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Dimensions is selected by default.
+    self.volumeField.hidden = true;
+    self.volumeLabel.hidden = true;
+    
+    self.lengthField.keyboardType = UIKeyboardTypeDecimalPad;           //set keyboard types to decimal pad. Information from stackoverflow.com/questions/2079987
+    self.widthField.keyboardType = UIKeyboardTypeDecimalPad;
+    self.heightField.keyboardType = UIKeyboardTypeDecimalPad;
+    self.volumeField.keyboardType = UIKeyboardTypeDecimalPad;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,12 +43,59 @@
 
 - (IBAction)selectControl:(id)sender {
     
-    if (self.selectionController.selectedSegmentIndex == 0) {
-        self.selectionLabel.text = @"First";
+    if (self.selectionController.selectedSegmentIndex == 0) {           //segment 0 is dimensions
+        
+        self.volumeLabel.hidden = true;                                 //hide volume elements
+        self.volumeField.hidden = true;
+        
+        self.lengthField.hidden = false;                                //show dimensions elements
+        self.widthField.hidden = false;
+        self.heightField.hidden = false;
+        self.lengthLabel.hidden = false;
+        self.widthLabel.hidden = false;
+        self.heightLabel.hidden = false;
+        
     }
     
     if (self.selectionController.selectedSegmentIndex == 1) {
-        self.selectionLabel.text = @"Second";
+        
+        self.lengthField.hidden = true;                                //hide dimensions elements
+        self.widthField.hidden = true;
+        self.heightField.hidden = true;
+        self.lengthLabel.hidden = true;
+        self.widthLabel.hidden = true;
+        self.heightLabel.hidden = true;
+    
+        self.volumeLabel.hidden = false;                                 //show volume elements
+        self.volumeField.hidden = false;
     }
+}
+
+- (IBAction)backgroundPressed:(id)sender {                              //Making inactive fields through background
+    
+    if ([self.lengthField isFirstResponder]){                           //for length field
+        [self.lengthField resignFirstResponder];
+    }
+    
+    if ([self.widthField isFirstResponder]){                            //for width field
+        [self.widthField resignFirstResponder];
+    }
+    
+    if ([self.heightField isFirstResponder]){                           //for height field
+        [self.heightField resignFirstResponder];
+    }
+    
+    if ([self.volumeField isFirstResponder]){                           //for volume field
+        [self.volumeField resignFirstResponder];
+    }
+}
+
+#pragma mark Text Field Delegate Methods
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 @end
