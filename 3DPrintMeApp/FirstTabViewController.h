@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TabDataClass.h"
 
 @interface FirstTabViewController : UIViewController <UITextFieldDelegate>
+
+@property (strong, nonatomic) TabDataClass *data;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *selectionController;
 

@@ -14,6 +14,8 @@
 
 @implementation FirstTabViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Dimensions is selected by default.
@@ -24,6 +26,9 @@
     self.widthField.keyboardType = UIKeyboardTypeDecimalPad;
     self.heightField.keyboardType = UIKeyboardTypeDecimalPad;
     self.volumeField.keyboardType = UIKeyboardTypeDecimalPad;
+    
+    self.data = [TabDataClass sharedInstance];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +45,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 - (IBAction)selectControl:(id)sender {
     
@@ -90,6 +96,15 @@
     }
 }
 
+
+-(void) textFieldDidEndEditing:(UITextField *)textField {
+    
+    [self.data setLengthValue: self.lengthField.text];
+    [self.data setWidthValue:self.widthField.text];
+    [self.data setHeightValue:self.widthField.text];
+    [self.data setVolumeValue:self.widthField.text];
+}
+
 #pragma mark Text Field Delegate Methods
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -98,4 +113,6 @@
     
     return YES;
 }
+
+
 @end

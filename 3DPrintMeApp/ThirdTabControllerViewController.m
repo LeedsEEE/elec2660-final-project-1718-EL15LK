@@ -18,6 +18,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    self.data = [TabDataClass sharedInstance];
+    
+    self.testLabel.text = [self.data lengthValue];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TabDataClass.h"
 
 @interface ThirdTabControllerViewController : UIViewController
+
+@property (strong, nonatomic) TabDataClass *data;
+
+@property (weak, nonatomic) IBOutlet UILabel *testLabel;
 
 @end

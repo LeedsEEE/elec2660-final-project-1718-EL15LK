@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A0085D3C1FC751560002C579 /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0085D3B1FC751560002C579 /* FirstTabViewController.m */; };
 		A020FCC81FC30167001326D3 /* uol-inverted.png in Resources */ = {isa = PBXBuildFile; fileRef = A020FCC71FC30167001326D3 /* uol-inverted.png */; };
+		A029A3531FCD72A600DF6AA5 /* TabDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A029A3521FCD72A600DF6AA5 /* TabDataClass.m */; };
 		A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */; };
 		A085C8EB1FC73AA300041D5B /* material.m in Sources */ = {isa = PBXBuildFile; fileRef = A085C8EA1FC73AA300041D5B /* material.m */; };
 		A09DF8B61FBB1A2700705C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B51FBB1A2700705C3A /* main.m */; };
@@ -48,6 +49,8 @@
 		A0085D3A1FC751560002C579 /* FirstTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTabViewController.h; sourceTree = "<group>"; };
 		A0085D3B1FC751560002C579 /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
 		A020FCC71FC30167001326D3 /* uol-inverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uol-inverted.png"; sourceTree = "<group>"; };
+		A029A3511FCD72A600DF6AA5 /* TabDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabDataClass.h; sourceTree = "<group>"; };
+		A029A3521FCD72A600DF6AA5 /* TabDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabDataClass.m; sourceTree = "<group>"; };
 		A03AD3DD1FC85B78009F1269 /* MaterialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDetailViewController.h; sourceTree = "<group>"; };
 		A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailViewController.m; sourceTree = "<group>"; };
 		A085C8E91FC73AA300041D5B /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				A0C79AFA1FC44C4B00379BE5 /* process.m */,
 				A0C79AFC1FC459D800379BE5 /* DataModel.h */,
 				A0C79AFD1FC459D800379BE5 /* DataModel.m */,
+				A029A3511FCD72A600DF6AA5 /* TabDataClass.h */,
+				A029A3521FCD72A600DF6AA5 /* TabDataClass.m */,
 			);
 			name = "Data Model Related";
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				A0DF16C51FC757950065488E /* topNavigationBar.m in Sources */,
 				A0C79AF81FC449D600379BE5 /* ThirdTabControllerViewController.m in Sources */,
 				A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */,
+				A029A3531FCD72A600DF6AA5 /* TabDataClass.m in Sources */,
 				A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */,
 				A09DF8B61FBB1A2700705C3A /* main.m in Sources */,
 				A0B85D641FC462C6006ABC1E /* LearningCentreTableViewController.m in Sources */,

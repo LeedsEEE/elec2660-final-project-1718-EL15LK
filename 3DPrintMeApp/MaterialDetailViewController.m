@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     
     self.infoLabel.text = self.material.quickinfo;
+    self.processLabel.text = self.material.process;
     
     self.priceLabel.text = self.material.cost;
     if ([self.priceLabel.text  isEqual: @"$"]) {
@@ -26,8 +27,6 @@
     } else if ([self.priceLabel.text isEqual: @"$$$"]) {
         self.priceLabel.textColor = [UIColor redColor];
     } else
-    
-    self.processLabel.text = self.material.process;
     
     self.strengthLabel.text = self.material.strength;
     if ([self.strengthLabel.text  isEqual: @"High"]) {
