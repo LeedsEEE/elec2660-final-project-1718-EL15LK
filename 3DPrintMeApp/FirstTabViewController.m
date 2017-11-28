@@ -27,7 +27,12 @@
     self.heightField.keyboardType = UIKeyboardTypeDecimalPad;
     self.volumeField.keyboardType = UIKeyboardTypeDecimalPad;
     
-    self.data = [TabDataClass sharedInstance];
+    self.data = [TabDataClass sharedInstance];                          //create shared instance of the tab data class
+    [self.data setInputType:@"Dimensions"];                             //initialize different properties to prevent eccentric behaviour of the application in other tabs
+    [self.data setLengthValue: 0];
+    [self.data setWidthValue: 0];
+    [self.data setHeightValue: 0];
+    [self.data setVolumeValue: 0];
     
 }
 
@@ -61,6 +66,7 @@
         self.widthLabel.hidden = false;
         self.heightLabel.hidden = false;
         
+        [self.data setInputType:@"Dimensions"];
     }
     
     if (self.selectionController.selectedSegmentIndex == 1) {
@@ -74,6 +80,8 @@
     
         self.volumeLabel.hidden = false;                                 //show volume elements
         self.volumeField.hidden = false;
+        
+        [self.data setInputType:@"Volume"];
     }
 }
 
@@ -99,10 +107,10 @@
 
 -(void) textFieldDidEndEditing:(UITextField *)textField {
     
-    [self.data setLengthValue: self.lengthField.text];
-    [self.data setWidthValue:self.widthField.text];
-    [self.data setHeightValue:self.widthField.text];
-    [self.data setVolumeValue:self.widthField.text];
+    [self.data setLengthValue: [self.lengthField.text floatValue]];
+    [self.data setWidthValue: [self.widthField.text floatValue]];
+    [self.data setHeightValue: [self.heightField.text floatValue]];
+    [self.data setVolumeValue:[self.volumeField.text floatValue]];
 }
 
 #pragma mark Text Field Delegate Methods

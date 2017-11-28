@@ -13,6 +13,9 @@
 
 @property (strong, nonatomic) TabDataClass *data;
 
-@property (weak, nonatomic) IBOutlet UILabel *testLabel;
+@property (weak, nonatomic) IBOutlet UILabel *typeinputLabel;
+@property (weak, nonatomic) IBOutlet UILabel *actualinputLabel;
+@property (weak, nonatomic) IBOutlet UILabel *calcVolumeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *calcVolumeTag;
 
 @end

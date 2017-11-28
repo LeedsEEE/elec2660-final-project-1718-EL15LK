@@ -10,10 +10,12 @@
 
 @interface TabDataClass : NSObject                          //Tutorial used from Dr Evans Blog (eencae.wordpress.com/ios-tutorials)
 
-@property (nonatomic,copy) NSString *lengthValue;
-@property (nonatomic,copy) NSString *widthValue;
-@property (nonatomic,copy) NSString *heightValue;
-@property (nonatomic,copy) NSString *volumeValue;
+@property float lengthValue;
+@property float widthValue;
+@property float heightValue;
+@property float volumeValue;
+
+@property (nonatomic,copy) NSString *inputType;
 
 + (TabDataClass *) sharedInstance;
 
