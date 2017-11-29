@@ -17,5 +17,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *actualinputLabel;
 @property (weak, nonatomic) IBOutlet UILabel *calcVolumeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *calcVolumeTag;
+@property (weak, nonatomic) IBOutlet UILabel *reasonLabel;
+@property (weak, nonatomic) IBOutlet UILabel *processLabel;
+@property (weak, nonatomic) IBOutlet UILabel *elaboratedReasoning;
+@property (weak, nonatomic) IBOutlet UILabel *costLabel;
 
 @end

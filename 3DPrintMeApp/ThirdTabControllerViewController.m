@@ -9,6 +9,9 @@
 #import "ThirdTabControllerViewController.h"
 
 @interface ThirdTabControllerViewController ()
+{
+    NSArray *choices; // 'choices' from tab 2
+}
 
 @end
 
@@ -17,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //Choices are predetermined, hence they will be stored in an array as strings
+    choices = @[@"Fun Print",@"Aesthetics",@"Visual Prototype",@"Functional Prototype",@"Final Product"];
     
     
 }
@@ -48,6 +54,31 @@
         
         self.calcVolumeTag.hidden = true;                       // hide calculated volume elements
         self.calcVolumeLabel.hidden = true;
+    }
+    
+    self.reasonLabel.text = choices [self.data.selection];
+    
+    switch (self.data.selection) {
+        case 0:
+            self.processLabel.text = @"1process goes here";
+            self.elaboratedReasoning.text = @"1reasoning goes here";
+            break;
+        case 1:
+            self.processLabel.text = @"2process goes here";
+            self.elaboratedReasoning.text = @"2reasoning goes here";
+            break;
+        case 2:
+            self.processLabel.text = @"3process goes here";
+            self.elaboratedReasoning.text = @"3reasoning goes here";
+            break;
+        case 3:
+            self.processLabel.text = @"4process goes here";
+            self.elaboratedReasoning.text = @"4reasoning goes here";
+            break;
+        case 4:
+            self.processLabel.text = @"5process goes here";
+            self.elaboratedReasoning.text = @"5reasoning goes here";
+            break;
     }
     
 }

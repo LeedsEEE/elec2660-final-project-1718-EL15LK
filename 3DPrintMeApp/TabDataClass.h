@@ -14,6 +14,7 @@
 @property float widthValue;
 @property float heightValue;
 @property float volumeValue;
+@property NSInteger selection;
 
 @property (nonatomic,copy) NSString *inputType;
 

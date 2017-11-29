@@ -11,7 +11,11 @@
 
 @interface DetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *processName;
+@property (weak, nonatomic) IBOutlet UILabel *quickInfo;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *resolutionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *qualityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *materialsLabel;
 
 @property (strong,nonatomic) process *process;
 

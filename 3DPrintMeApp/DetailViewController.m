@@ -18,7 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.processName.text = self.process.name;
+    self.quickInfo.text = self.process.quickinfo;
+    self.priceLabel.text = [NSString stringWithFormat:@"Around £%.2f per mm3",self.process.cost];
+    self.resolutionLabel.text = [NSString stringWithFormat:@"%f",self.process.resolution];
+    self.qualityLabel.text = self.process.quality;
+    self.materialsLabel.text = self.process.materialusage;
+    
 }
 
 - (void)didReceiveMemoryWarning {

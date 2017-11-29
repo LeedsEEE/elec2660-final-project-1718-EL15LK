@@ -13,7 +13,7 @@
 //Different attributes are defined here. As this class only holds data, no methods are required to be defined.
 @property (strong,nonatomic) NSString *name;
 @property float cost;
-@property int resolution;
+@property float resolution;
 @property (strong,nonatomic) NSString *quality;
 @property (strong,nonatomic) NSString *quickinfo;
 @property (strong,nonatomic) NSString *materialusage;

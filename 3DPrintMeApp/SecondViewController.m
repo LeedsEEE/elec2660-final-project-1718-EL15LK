@@ -22,10 +22,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //Choices are predetermined, hence they will be stored in an array as strings
-    choices = @[@"Aesthetics",@"Fun Print",@"Final Product",@"Visual Prototype",@"Functional Prototype"];
+    choices = @[@"Fun Print",@"Aesthetics",@"Visual Prototype",@"Functional Prototype",@"Final Product"];
     
     self.pickerReason.delegate = self;
     self.pickerReason.dataSource = self;
+    
+    self.data = [TabDataClass sharedInstance];
     
 }
 
@@ -47,6 +49,7 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
+    [self.data setSelection:[self.pickerReason selectedRowInComponent:0]];
 }
 
 

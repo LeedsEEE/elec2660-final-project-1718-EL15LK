@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TabDataClass.h"
 
 @interface SecondViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (strong, nonatomic) TabDataClass *data;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerReason;
 
