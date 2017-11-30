@@ -17,5 +17,6 @@
 @property (strong,nonatomic) NSString *quality;
 @property (strong,nonatomic) NSString *quickinfo;
 @property (strong,nonatomic) NSString *materialusage;
+@property (strong,nonatomic) NSString *imagelink;
 
 @end

@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *resolutionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *qualityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *materialsLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *processImage;
 
 @property (strong,nonatomic) process *process;
 

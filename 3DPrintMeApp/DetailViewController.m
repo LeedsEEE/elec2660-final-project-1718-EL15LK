@@ -9,7 +9,12 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
-
+// FDM and SLA image from website: http://apm-designs.com/fdm-vs-sla-3d-printer-tech-comparison
+// original SLS image By Materialgeeza - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4032088 . Modified for consistency.
+{
+    NSArray *images;
+    
+}
 @end
 
 @implementation DetailViewController
@@ -18,11 +23,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    images = @[@"FDM_printing.png",@"SLA_printing.png",@"SLA_printing.png"];
+    
     self.quickInfo.text = self.process.quickinfo;
     self.priceLabel.text = [NSString stringWithFormat:@"Around £%.2f per mm3",self.process.cost];
-    self.resolutionLabel.text = [NSString stringWithFormat:@"%f",self.process.resolution];
+    self.resolutionLabel.text = [NSString stringWithFormat:@"%.3f",self.process.resolution];
     self.qualityLabel.text = self.process.quality;
     self.materialsLabel.text = self.process.materialusage;
+    self.processImage.image = [UIImage imageNamed: self.process.imagelink];
     
 }
 

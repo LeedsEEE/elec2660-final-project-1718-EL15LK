@@ -28,6 +28,7 @@
         FDM.quality = @"Low to Medium";
         FDM.quickinfo = @"FDM stands for Fused Deposition Modelling. It is a popular form of 3D printing that is very commonly used.";
         FDM.materialusage = @"PLA, ABS, Nylon, Composite Polymers";
+        FDM.imagelink = @"FDM_printing.png";
         
         process *SLA = [[process alloc] init];
         SLA.name = @"Stereolithography";
@@ -36,6 +37,7 @@
         SLA.quality = @"High";
         SLA.quickinfo = @"SLA stands for Stereolithography. It is a much more accurate form of 3D printing that is used for finer details.";
         SLA.materialusage = @"Photosensitive Resins";
+        SLA.imagelink = @"SLA_printing.png";
         
         process *SLS = [[process alloc] init];
         SLS.name = @"Selective Laser Sintering";
@@ -44,6 +46,7 @@
         SLS.quality = @"High";
         SLS.quickinfo = @"SLS stands for Selective Laser Sintering. It is an extremely accurate form of 3D printing that is also expensive.";
         SLS.materialusage = @"Polyamide (Nylon), Polystyrenes, Thermoplastic Polyurethane (TPU), Metal";
+        SLS.imagelink = @"SLA_printing.png";
         
         [self.processes addObject:FDM]; //index 0
         [self.processes addObject:SLA]; //index 1

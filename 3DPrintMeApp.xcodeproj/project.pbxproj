@@ -26,6 +26,8 @@
 		A0C79AFB1FC44C4B00379BE5 /* process.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AFA1FC44C4B00379BE5 /* process.m */; };
 		A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AFD1FC459D800379BE5 /* DataModel.m */; };
 		A0DF16C51FC757950065488E /* topNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF16C41FC757950065488E /* topNavigationBar.m */; };
+		A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331601FD0154700361E11 /* FDM_printing.png */; };
+		A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331611FD0154A00361E11 /* SLA_printing.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		A0C79AFD1FC459D800379BE5 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		A0DF16C31FC757950065488E /* topNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topNavigationBar.h; sourceTree = "<group>"; };
 		A0DF16C41FC757950065488E /* topNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topNavigationBar.m; sourceTree = "<group>"; };
+		A0F331601FD0154700361E11 /* FDM_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FDM_printing.png; sourceTree = "<group>"; };
+		A0F331611FD0154A00361E11 /* SLA_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SLA_printing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 		A085C8EE1FC73B0500041D5B /* Multimedia Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A0F331601FD0154700361E11 /* FDM_printing.png */,
+				A0F331611FD0154A00361E11 /* SLA_printing.png */,
 				A020FCC71FC30167001326D3 /* uol-inverted.png */,
 			);
 			name = "Multimedia Resources";
@@ -345,7 +351,9 @@
 				A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */,
 				A020FCC81FC30167001326D3 /* uol-inverted.png in Resources */,
 				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
+				A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */,
 				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
+				A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
