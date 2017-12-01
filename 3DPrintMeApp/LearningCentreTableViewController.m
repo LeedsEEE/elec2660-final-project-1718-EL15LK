@@ -26,6 +26,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
+    
+    self.tableView.backgroundColor = baseColor;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -144,8 +146,5 @@
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
     [header.textLabel setTextColor:[UIColor whiteColor]];
     header.contentView.backgroundColor = baseColor;
-    
-    UITableViewHeaderFooterView *footer = (UITableViewHeaderFooterView *)view;
-    footer.contentView.backgroundColor = baseColor;
 }
 @end

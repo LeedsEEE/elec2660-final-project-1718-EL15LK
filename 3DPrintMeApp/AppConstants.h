@@ -12,12 +12,12 @@
 
 #pragma mark Images
 
-#define TitleLogo @"icon-jawbone-logo.png"
+#define TitleLogo @"TopBar.png"
 
 
 #pragma mark Colors
 
-#define baseColor UIColorFromHex(0x95CAEA)
+#define baseColor UIColorFromHex(0xA6D4ED)
 #define navbarColor UIColorFromHex(0x415185)
 #define buttonBaseColor UIColorFromHex(0xD08A11)
 #define appRedColor UIColorFromHex(0xD44036)
