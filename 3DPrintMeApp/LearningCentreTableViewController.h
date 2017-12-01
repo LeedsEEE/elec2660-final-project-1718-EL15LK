@@ -10,6 +10,7 @@
 #import "DataModel.h"
 #import "DetailViewController.h"
 #import "MaterialDetailViewController.h"
+#import "AppConstants.h"
 
 @interface LearningCentreTableViewController : UITableViewController
 

@@ -7,6 +7,7 @@
 //
 
 #import "ThirdTabControllerViewController.h"
+#import "AppConstants.h"
 
 @interface ThirdTabControllerViewController ()
 {
@@ -23,6 +24,8 @@
     
     //Choices are predetermined, hence they will be stored in an array as strings
     choices = @[@"Fun Print",@"Aesthetics",@"Visual Prototype",@"Functional Prototype",@"Final Product"];
+    
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     
     
 }

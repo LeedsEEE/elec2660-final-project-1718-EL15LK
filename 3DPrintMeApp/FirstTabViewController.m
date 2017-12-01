@@ -7,6 +7,7 @@
 //
 
 #import "FirstTabViewController.h"
+#import "AppConstants.h"
 
 @interface FirstTabViewController ()
 
@@ -33,6 +34,8 @@
     [self.data setWidthValue: 0];
     [self.data setHeightValue: 0];
     [self.data setVolumeValue: 0];
+    
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     
 }
 

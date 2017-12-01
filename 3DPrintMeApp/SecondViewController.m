@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "AppConstants.h"
 
 @interface SecondViewController ()
 {
@@ -28,6 +29,8 @@
     self.pickerReason.dataSource = self;
     
     self.data = [TabDataClass sharedInstance];
+    
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     
 }
 
@@ -62,12 +65,6 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     return choices.count;                                                        //  Number of Rows is determined by the array size
-}
-
-
-- (IBAction)testButton:(id)sender {                                                 //yagnesh animation channel
-    
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"http://www.l-kumar.com"]];
 }
 
 @end

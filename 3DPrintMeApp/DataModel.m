@@ -46,7 +46,7 @@
         SLS.quality = @"High";
         SLS.quickinfo = @"SLS stands for Selective Laser Sintering. It is an extremely accurate form of 3D printing that is also expensive.";
         SLS.materialusage = @"Polyamide (Nylon), Polystyrenes, Thermoplastic Polyurethane (TPU), Metal";
-        SLS.imagelink = @"SLA_printing.png";
+        SLS.imagelink = @"SLS_printing.jpg";
         
         [self.processes addObject:FDM]; //index 0
         [self.processes addObject:SLA]; //index 1
