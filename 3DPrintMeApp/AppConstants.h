@@ -17,6 +17,10 @@
 
 #pragma mark Colors
 
-#define baseColor UIColorFromHex(0x313131)
+#define baseColor UIColorFromHex(0x95CAEA)
+#define navbarColor UIColorFromHex(0x415185)
+#define buttonBaseColor UIColorFromHex(0xD08A11)
+#define appRedColor UIColorFromHex(0xD44036)
+#define appGreenColor UIColorFromHex(0x34983E)
 
 

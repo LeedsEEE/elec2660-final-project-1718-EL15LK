@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "process.h"
+#import "AppConstants.h"
 
 @interface DetailViewController : UIViewController
 

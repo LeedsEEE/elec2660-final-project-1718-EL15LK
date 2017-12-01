@@ -138,4 +138,14 @@
     }
     
 }
+
+-(void)tableView:(UITableView*)tableView willDisplayHeaderView:(nonnull UIView *)view forSection:(NSInteger)section
+{
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    [header.textLabel setTextColor:[UIColor whiteColor]];
+    header.contentView.backgroundColor = baseColor;
+    
+    UITableViewHeaderFooterView *footer = (UITableViewHeaderFooterView *)view;
+    footer.contentView.backgroundColor = baseColor;
+}
 @end

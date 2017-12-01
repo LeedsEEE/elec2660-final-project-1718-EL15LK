@@ -1,26 +1,35 @@
 //
-//  StartViewController.m
+//  MapViewController.m
 //  3DPrintMeApp
 //
 //  Created by Lakshit Kumar [el15lk] on 01/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "StartViewController.h"
-#import "AppConstants.h"
+#import "MapViewController.h"
 
-@interface StartViewController ()
+@interface MapViewController ()
 
 @end
 
-@implementation StartViewController
+@implementation MapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
-    self.navigationItem.backBarButtonItem.tintColor = [UIColor whiteColor];
+    self.location = [[CLLocationManager alloc] init];
+    
+    CLLocation *currentLocation = self.location.location;
+    CLLocationCoordinate2D locationCoords = currentLocation.coordinate;
+    
+    self.actualMap.delegate = self;
+    self.location.delegate = self;
+    
+    [self.location requestWhenInUseAuthorization];
+    self.actualMap.showsUserLocation = YES;
+    self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.01, 0.01));
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,37 +23,39 @@
     
     self.priceLabel.text = self.material.cost;
     if ([self.priceLabel.text  isEqual: @"$"]) {
-        self.priceLabel.textColor = [UIColor greenColor];
+        self.priceLabel.textColor = appGreenColor;
     } else if ([self.priceLabel.text isEqual: @"$$$"]) {
-        self.priceLabel.textColor = [UIColor redColor];
+        self.priceLabel.textColor = appRedColor;
     } else
     
     self.strengthLabel.text = self.material.strength;
     if ([self.strengthLabel.text  isEqual: @"High"]) {
-        self.strengthLabel.textColor = [UIColor greenColor];
+        self.strengthLabel.textColor = appGreenColor;
     } else if ([self.strengthLabel.text isEqual: @"Very High"]) {
-        self.strengthLabel.textColor = [UIColor greenColor];
+        self.strengthLabel.textColor = appGreenColor;
     } else if ([self.strengthLabel.text isEqual: @"Low"]){
-        self.strengthLabel.textColor = [UIColor redColor];
+        self.strengthLabel.textColor = appRedColor;
     }
     
     self.flexibilityLabel.text = self.material.flexibility;
     if ([self.flexibilityLabel.text  isEqual: @"High"]) {
-        self.flexibilityLabel.textColor = [UIColor greenColor];
+        self.flexibilityLabel.textColor = appGreenColor;
     } else if ([self.flexibilityLabel.text isEqual: @"Very High"]) {
-        self.flexibilityLabel.textColor = [UIColor greenColor];
+        self.flexibilityLabel.textColor = appGreenColor;
     } else if ([self.flexibilityLabel.text isEqual: @"Low"]){
-        self.flexibilityLabel.textColor = [UIColor redColor];
+        self.flexibilityLabel.textColor = appRedColor;
     }
     
     self.durabilityLabel.text = self.material.durability;
     if ([self.durabilityLabel.text  isEqual: @"High"]) {
-        self.durabilityLabel.textColor = [UIColor greenColor];
+        self.durabilityLabel.textColor = appGreenColor;
     } else if ([self.durabilityLabel.text isEqual: @"Very High"]) {
-        self.durabilityLabel.textColor = [UIColor greenColor];
+        self.durabilityLabel.textColor = appGreenColor;
     } else if ([self.durabilityLabel.text isEqual: @"Low"]){
-        self.durabilityLabel.textColor = [UIColor redColor];
+        self.durabilityLabel.textColor = appRedColor;
     }
+    
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     
 }
 

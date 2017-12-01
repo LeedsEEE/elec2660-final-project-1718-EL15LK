@@ -32,6 +32,8 @@
     self.materialsLabel.text = self.process.materialusage;
     self.processImage.image = [UIImage imageNamed: self.process.imagelink];
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
+    
 }
 
 - (void)didReceiveMemoryWarning {

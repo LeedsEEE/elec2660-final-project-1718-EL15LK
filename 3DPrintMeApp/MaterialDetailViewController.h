@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "material.h"
+#import "AppConstants.h"
 
 @interface MaterialDetailViewController : UIViewController
 
