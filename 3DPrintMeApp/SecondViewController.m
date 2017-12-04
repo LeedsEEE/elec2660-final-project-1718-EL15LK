@@ -55,8 +55,6 @@
     [self.data setSelection:[self.pickerReason selectedRowInComponent:0]];
 }
 
-
-
 #pragma mark DataSource Methods
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{

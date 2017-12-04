@@ -7,6 +7,7 @@
 //
 
 // This technique is adapted from the example on https://github.com/Jawbone/JBChartView
+//
 
 #define UIColorFromHex(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0]
 
@@ -17,10 +18,10 @@
 
 #pragma mark Colors
 
-#define baseColor UIColorFromHex(0xA6D4ED)
-#define navbarColor UIColorFromHex(0x415185)
-#define buttonBaseColor UIColorFromHex(0xD08A11)
-#define appRedColor UIColorFromHex(0xD44036)
-#define appGreenColor UIColorFromHex(0x34983E)
+#define baseColor UIColorFromHex(0xA6D4ED)                          //used baseColor because backgroundColor is a keyword
+#define navbarColor UIColorFromHex(0x415185)                        //colour of the top navigation bar
+#define buttonBaseColor UIColorFromHex(0xD08A11)                    //color of the fill in buttons
+#define appRedColor UIColorFromHex(0xD44036)                        //red color defined for table view elements
+#define appGreenColor UIColorFromHex(0x34983E)                      //green color defined for table view elements
 
 

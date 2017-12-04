@@ -9,6 +9,11 @@
 #import "MapViewController.h"
 
 @interface MapViewController ()
+{
+    
+    CLLocationCoordinate2D locationCoords;          // Coordinates for Leeds: 53.806682 & -1.555033
+    
+}
 
 @end
 
@@ -18,17 +23,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.location = [[CLLocationManager alloc] init];
-    
-    CLLocation *currentLocation = self.location.location;
-    CLLocationCoordinate2D locationCoords = currentLocation.coordinate;
-    
     self.actualMap.delegate = self;
     self.location.delegate = self;
     
     [self.location requestWhenInUseAuthorization];
     self.actualMap.showsUserLocation = YES;
-    self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.01, 0.01));
+    self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.01, self.zoomValue));
+    
+    
+    self.zoomLabel.text = [NSString stringWithFormat:@"Zoom: %f",self.zoomValue];
     
 }
 
@@ -37,14 +40,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    self.location = [[CLLocationManager alloc] init];
+    
+    [self UpdateMap];
+    
 }
-*/
 
+- (IBAction)zoomSlider:(UISlider *)sender {
+    
+    self.zoomLabel.text = [NSString stringWithFormat:@"Zoom: %f",sender.value];
+    self.zoomValue = sender.value;
+    
+    self.zoomLabel.text = [NSString stringWithFormat:@"Zoom: %f",self.zoomValue];
+    
+    [self UpdateMap];
+}
+
+-(void)UpdateMap{
+    
+    CLLocation *currentLocation = self.location.location;
+    locationCoords = currentLocation.coordinate;
+    self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(self.zoomValue, self.zoomValue));
+    
+}
 @end

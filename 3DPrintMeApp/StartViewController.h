@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SceneKit/SceneKit.h>
 
 @interface StartViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet SCNView *SCNScene;
 
 @end

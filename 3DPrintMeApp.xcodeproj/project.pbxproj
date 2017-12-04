@@ -34,6 +34,9 @@
 		A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */; };
 		A09DF8D21FBB1A2900705C3A /* _DPrintMeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */; };
 		A09DF8DD1FBB1A2A00705C3A /* _DPrintMeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */; };
+		A0AA4D071FD5B43900280FBD /* SceneKit Scene2.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AA4D061FD5B43900280FBD /* SceneKit Scene2.scn */; };
+		A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AAC6EF1FD5915F00152110 /* STLParser.m */; };
+		A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */; };
 		A0B85D641FC462C6006ABC1E /* LearningCentreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */; };
 		A0B85D671FC469E6006ABC1E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B85D661FC469E6006ABC1E /* DetailViewController.m */; };
 		A0C79AF81FC449D600379BE5 /* ThirdTabControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */; };
@@ -65,7 +68,6 @@
 		A0085D3B1FC751560002C579 /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
 		A029A3511FCD72A600DF6AA5 /* TabDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabDataClass.h; sourceTree = "<group>"; };
 		A029A3521FCD72A600DF6AA5 /* TabDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabDataClass.m; sourceTree = "<group>"; };
-		A02E4FB01FD1899800906EFF /* movember_mustache.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = movember_mustache.stl; sourceTree = "<group>"; };
 		A02E4FB21FD18AA400906EFF /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		A02E4FB41FD1901400906EFF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		A02E4FB61FD1902700906EFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -104,10 +106,17 @@
 		A09DF8D81FBB1A2A00705C3A /* 3DPrintMeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DPrintMeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DPrintMeAppUITests.m; sourceTree = "<group>"; };
 		A09DF8DE1FBB1A2A00705C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AA4D061FD5B43900280FBD /* SceneKit Scene2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "SceneKit Scene2.scn"; path = "../SceneKit Scene2.scn"; sourceTree = "<group>"; };
+		A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chambered_Bracelet.stl; sourceTree = "<group>"; };
+		A0AAC6ED1FD5914600152110 /* HxSTLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HxSTLParser.h; sourceTree = "<group>"; };
+		A0AAC6EE1FD5915F00152110 /* STLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLParser.h; sourceTree = "<group>"; };
+		A0AAC6EF1FD5915F00152110 /* STLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLParser.m; sourceTree = "<group>"; };
+		A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		A0B85D621FC462C6006ABC1E /* LearningCentreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearningCentreTableViewController.h; sourceTree = "<group>"; };
 		A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningCentreTableViewController.m; sourceTree = "<group>"; };
 		A0B85D651FC469E6006ABC1E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		A0B85D661FC469E6006ABC1E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A0C37DE91FD5ADA5006A9A48 /* 3dObject.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 3dObject.scn; sourceTree = "<group>"; };
 		A0C79AF61FC449D600379BE5 /* ThirdTabControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdTabControllerViewController.h; sourceTree = "<group>"; };
 		A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTabControllerViewController.m; sourceTree = "<group>"; };
 		A0C79AF91FC44C4B00379BE5 /* process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = process.h; sourceTree = "<group>"; };
@@ -176,12 +185,15 @@
 		A085C8EE1FC73B0500041D5B /* Multimedia Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A0AA4D061FD5B43900280FBD /* SceneKit Scene2.scn */,
+				A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */,
+				A0C37DE91FD5ADA5006A9A48 /* 3dObject.scn */,
+				A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */,
 				A08C05881FD1D2A90094BFD2 /* Tab Icons */,
 				A08C05861FD1C82C0094BFD2 /* Logo Base.png */,
 				A08C057D1FD1C6C50094BFD2 /* Process Images */,
 				A08C057B1FD1C6300094BFD2 /* LaunchScreen.jpg */,
 				A08C05791FD1C5CE0094BFD2 /* TopBar.png */,
-				A02E4FB01FD1899800906EFF /* movember_mustache.stl */,
 				A08582031FD1752E00781E53 /* icon-jawbone-logo.png */,
 			);
 			name = "Multimedia Resources";
@@ -271,6 +283,9 @@
 		A09DF8B31FBB1A2700705C3A /* 3DPrintMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0AAC6EE1FD5915F00152110 /* STLParser.h */,
+				A0AAC6EF1FD5915F00152110 /* STLParser.m */,
+				A0AAC6ED1FD5914600152110 /* HxSTLParser.h */,
 				A085820B1FD17A1B00781E53 /* AppConstants.h */,
 				A085C8F11FC73B5700041D5B /* Learning Centre View Controllers */,
 				A085C8F01FC73B3C00041D5B /* Tab View Controllers */,
@@ -429,9 +444,11 @@
 				A08C057C1FD1C6300094BFD2 /* LaunchScreen.jpg in Resources */,
 				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
 				A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */,
+				A0AA4D071FD5B43900280FBD /* SceneKit Scene2.scn in Resources */,
 				A08C05851FD1C7170094BFD2 /* Suggestion_unlit.png in Resources */,
 				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
 				A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */,
+				A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */,
 				A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */,
 				A08C057A1FD1C5CE0094BFD2 /* TopBar.png in Resources */,
 				A08C05831FD1C70C0094BFD2 /* Reason_black.png in Resources */,
@@ -461,6 +478,7 @@
 			files = (
 				A085C8EB1FC73AA300041D5B /* material.m in Sources */,
 				A0085D3C1FC751560002C579 /* FirstTabViewController.m in Sources */,
+				A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */,
 				A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */,
 				A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */,
 				A0B85D671FC469E6006ABC1E /* DetailViewController.m in Sources */,

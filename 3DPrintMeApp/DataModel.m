@@ -22,7 +22,7 @@
         self.processes = [NSMutableArray array];
         
         process *FDM = [[process alloc] init];
-        FDM.name = @"Fused Deposition Modelling";
+        FDM.name = @"Fused Deposition Modelling (FDM)";
         FDM.cost = 13.44;
         FDM.resolution = 0.127;
         FDM.quality = @"Low to Medium";
@@ -31,7 +31,7 @@
         FDM.imagelink = @"FDM_printing.png";
         
         process *SLA = [[process alloc] init];
-        SLA.name = @"Stereolithography";
+        SLA.name = @"Stereolithography (SLA)";
         SLA.cost = 50.23;
         SLA.resolution = 0.015;
         SLA.quality = @"High";
@@ -40,7 +40,7 @@
         SLA.imagelink = @"SLA_printing.png";
         
         process *SLS = [[process alloc] init];
-        SLS.name = @"Selective Laser Sintering";
+        SLS.name = @"Selective Laser Sintering (SLS)";
         SLS.cost = 90.23;
         SLS.resolution = 0.01;
         SLS.quality = @"High";

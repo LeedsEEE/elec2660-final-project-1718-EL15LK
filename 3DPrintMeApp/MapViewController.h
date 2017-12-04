@@ -13,7 +13,11 @@
 @interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *actualMap;
+@property (weak, nonatomic) IBOutlet UILabel *zoomLabel;
 @property (strong, nonatomic) CLLocationManager *location;
+@property (weak, nonatomic) IBOutlet UISlider *zoomSlider;
+@property float zoomValue;
 
+- (IBAction)zoomSlider:(UISlider *)sender;
 
 @end

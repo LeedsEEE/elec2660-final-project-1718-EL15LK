@@ -25,9 +25,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];             //set title logo at the top navigation bar
     
-    self.tableView.backgroundColor = baseColor;
+    self.tableView.backgroundColor = baseColor;                                                                     //set background colour of the table. This will ensure consistency of the screen colors.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +39,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 2;
+    return 2;                                                                                                       // 2 sections are present - materials and processes
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -47,11 +47,11 @@
     NSInteger numberOfRows = 0;
     
     if (section == 0) {
-        numberOfRows = self.data.processes.count;
+        numberOfRows = self.data.processes.count;                                                                   // setup number of rows according to number of elements in processes array.
     }
     
     if (section == 1) {
-        numberOfRows = self.data.materials.count;
+        numberOfRows = self.data.materials.count;                                                                   // setup number of rows according to number of elements in materials array.
     }
     
     return numberOfRows;
@@ -84,7 +84,7 @@
     UITableViewCell *cell;
     // Configure the cell...
     
-    if (indexPath.section == 0){                                                                        //processes
+    if (indexPath.section == 0){                                                                        //processes section
         
         cell = [tableView dequeueReusableCellWithIdentifier:@"ProcessCell" forIndexPath:indexPath];
         process *tempProcess = [self.data.processes objectAtIndex:indexPath.row];
@@ -92,7 +92,7 @@
         cell.textLabel.text = tempProcess.name;
     }
     
-    if (indexPath.section == 1){                                                                        //materials
+    if (indexPath.section == 1){                                                                        //materials section
         
         cell = [tableView dequeueReusableCellWithIdentifier:@"MaterialCell" forIndexPath:indexPath];
         material *tempMaterial = [self.data.materials objectAtIndex:indexPath.row];
@@ -115,7 +115,7 @@
 
     if ([[segue identifier] isEqualToString:@"ShowProcessDetails"]) {
         
-        DetailViewController *destinationViewController = [segue destinationViewController];
+        DetailViewController *destinationViewController = [segue destinationViewController];                    //if it is the ShowProcessDetails segue, go to DetailViewController
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
@@ -128,7 +128,7 @@
 
     if ([[segue identifier] isEqualToString:@"ShowMaterialDetails"]) {
             
-        MaterialDetailViewController *destinationViewController = [segue destinationViewController];
+        MaterialDetailViewController *destinationViewController = [segue destinationViewController];           //if it is the ShowMaterialDetails segue, go to MaterialDetailViewController
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
