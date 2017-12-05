@@ -35,8 +35,6 @@
     [self.data setHeightValue: 0];
     [self.data setVolumeValue: 0];
     
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
-    
 }
 
 - (void)didReceiveMemoryWarning {

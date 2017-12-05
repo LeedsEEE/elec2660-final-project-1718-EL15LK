@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "iphoneLogo.jpg",
+      "filename" : "Suggestion.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Suggestion2X.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Suggestion3X.png",
       "scale" : "3x"
     }
   ],

@@ -14,17 +14,13 @@
 		A02E4FB71FD1902700906EFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02E4FB61FD1902700906EFF /* CoreLocation.framework */; };
 		A02E4FBA1FD1909B00906EFF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E4FB91FD1909B00906EFF /* MapViewController.m */; };
 		A02E4FBC1FD1929400906EFF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02E4FBB1FD1929400906EFF /* MapKit.framework */; };
+		A031A4111FD6AD04003842A5 /* TopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A031A4101FD6AD04003842A5 /* TopBar.png */; };
+		A033421F1FD6CBB8003E6F97 /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = A033421E1FD6CBB8003E6F97 /* TabController.m */; };
 		A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */; };
 		A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A08581F31FD1577A00781E53 /* SLS_printing.jpg */; };
-		A08582041FD1752E00781E53 /* icon-jawbone-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A08582031FD1752E00781E53 /* icon-jawbone-logo.png */; };
 		A08582071FD1790200781E53 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08582061FD1790200781E53 /* StartViewController.m */; };
 		A085C8EB1FC73AA300041D5B /* material.m in Sources */ = {isa = PBXBuildFile; fileRef = A085C8EA1FC73AA300041D5B /* material.m */; };
-		A08C057A1FD1C5CE0094BFD2 /* TopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C05791FD1C5CE0094BFD2 /* TopBar.png */; };
 		A08C057C1FD1C6300094BFD2 /* LaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A08C057B1FD1C6300094BFD2 /* LaunchScreen.jpg */; };
-		A08C057F1FD1C6FB0094BFD2 /* dimensions.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C057E1FD1C6FB0094BFD2 /* dimensions.png */; };
-		A08C05811FD1C7010094BFD2 /* Nearby.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C05801FD1C7010094BFD2 /* Nearby.png */; };
-		A08C05831FD1C70C0094BFD2 /* Reason_black.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C05821FD1C70C0094BFD2 /* Reason_black.png */; };
-		A08C05851FD1C7170094BFD2 /* Suggestion_unlit.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C05841FD1C7170094BFD2 /* Suggestion_unlit.png */; };
 		A08C05871FD1C82C0094BFD2 /* Logo Base.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C05861FD1C82C0094BFD2 /* Logo Base.png */; };
 		A09DF8B61FBB1A2700705C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B51FBB1A2700705C3A /* main.m */; };
 		A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8B81FBB1A2700705C3A /* AppDelegate.m */; };
@@ -74,21 +70,18 @@
 		A02E4FB81FD1909B00906EFF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		A02E4FB91FD1909B00906EFF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		A02E4FBB1FD1929400906EFF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A031A4101FD6AD04003842A5 /* TopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopBar.png; sourceTree = "<group>"; };
+		A033421D1FD6CBB8003E6F97 /* TabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabController.h; sourceTree = "<group>"; };
+		A033421E1FD6CBB8003E6F97 /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
 		A03AD3DD1FC85B78009F1269 /* MaterialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDetailViewController.h; sourceTree = "<group>"; };
 		A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailViewController.m; sourceTree = "<group>"; };
 		A08581F31FD1577A00781E53 /* SLS_printing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SLS_printing.jpg; sourceTree = "<group>"; };
-		A08582031FD1752E00781E53 /* icon-jawbone-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-jawbone-logo.png"; sourceTree = "<group>"; };
 		A08582051FD1790200781E53 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		A08582061FD1790200781E53 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		A085820B1FD17A1B00781E53 /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		A085C8E91FC73AA300041D5B /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
 		A085C8EA1FC73AA300041D5B /* material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = material.m; sourceTree = "<group>"; };
-		A08C05791FD1C5CE0094BFD2 /* TopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopBar.png; sourceTree = "<group>"; };
 		A08C057B1FD1C6300094BFD2 /* LaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchScreen.jpg; sourceTree = "<group>"; };
-		A08C057E1FD1C6FB0094BFD2 /* dimensions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimensions.png; sourceTree = "<group>"; };
-		A08C05801FD1C7010094BFD2 /* Nearby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nearby.png; sourceTree = "<group>"; };
-		A08C05821FD1C70C0094BFD2 /* Reason_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reason_black.png; sourceTree = "<group>"; };
-		A08C05841FD1C7170094BFD2 /* Suggestion_unlit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Suggestion_unlit.png; sourceTree = "<group>"; };
 		A08C05861FD1C82C0094BFD2 /* Logo Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo Base.png"; sourceTree = "<group>"; };
 		A09DF8B11FBB1A2700705C3A /* 3DPrintMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DPrintMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DF8B51FBB1A2700705C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -189,12 +182,10 @@
 				A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */,
 				A0C37DE91FD5ADA5006A9A48 /* 3dObject.scn */,
 				A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */,
-				A08C05881FD1D2A90094BFD2 /* Tab Icons */,
 				A08C05861FD1C82C0094BFD2 /* Logo Base.png */,
 				A08C057D1FD1C6C50094BFD2 /* Process Images */,
 				A08C057B1FD1C6300094BFD2 /* LaunchScreen.jpg */,
-				A08C05791FD1C5CE0094BFD2 /* TopBar.png */,
-				A08582031FD1752E00781E53 /* icon-jawbone-logo.png */,
+				A031A4101FD6AD04003842A5 /* TopBar.png */,
 			);
 			name = "Multimedia Resources";
 			sourceTree = "<group>";
@@ -221,6 +212,8 @@
 				A09DF8BE1FBB1A2800705C3A /* SecondViewController.m */,
 				A02E4FB81FD1909B00906EFF /* MapViewController.h */,
 				A02E4FB91FD1909B00906EFF /* MapViewController.m */,
+				A033421D1FD6CBB8003E6F97 /* TabController.h */,
+				A033421E1FD6CBB8003E6F97 /* TabController.m */,
 			);
 			name = "Tab View Controllers";
 			sourceTree = "<group>";
@@ -246,17 +239,6 @@
 				A0F331611FD0154A00361E11 /* SLA_printing.png */,
 			);
 			name = "Process Images";
-			sourceTree = "<group>";
-		};
-		A08C05881FD1D2A90094BFD2 /* Tab Icons */ = {
-			isa = PBXGroup;
-			children = (
-				A08C057E1FD1C6FB0094BFD2 /* dimensions.png */,
-				A08C05821FD1C70C0094BFD2 /* Reason_black.png */,
-				A08C05841FD1C7170094BFD2 /* Suggestion_unlit.png */,
-				A08C05801FD1C7010094BFD2 /* Nearby.png */,
-			);
-			name = "Tab Icons";
 			sourceTree = "<group>";
 		};
 		A09DF8A81FBB1A2600705C3A = {
@@ -436,22 +418,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08C05811FD1C7010094BFD2 /* Nearby.png in Resources */,
-				A08582041FD1752E00781E53 /* icon-jawbone-logo.png in Resources */,
 				A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */,
-				A08C057F1FD1C6FB0094BFD2 /* dimensions.png in Resources */,
 				A08C05871FD1C82C0094BFD2 /* Logo Base.png in Resources */,
 				A08C057C1FD1C6300094BFD2 /* LaunchScreen.jpg in Resources */,
 				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
 				A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */,
 				A0AA4D071FD5B43900280FBD /* SceneKit Scene2.scn in Resources */,
-				A08C05851FD1C7170094BFD2 /* Suggestion_unlit.png in Resources */,
 				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
 				A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */,
 				A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */,
 				A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */,
-				A08C057A1FD1C5CE0094BFD2 /* TopBar.png in Resources */,
-				A08C05831FD1C70C0094BFD2 /* Reason_black.png in Resources */,
+				A031A4111FD6AD04003842A5 /* TopBar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +458,7 @@
 				A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */,
 				A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */,
 				A09DF8B91FBB1A2700705C3A /* AppDelegate.m in Sources */,
+				A033421F1FD6CBB8003E6F97 /* TabController.m in Sources */,
 				A0B85D671FC469E6006ABC1E /* DetailViewController.m in Sources */,
 				A0C79AF81FC449D600379BE5 /* ThirdTabControllerViewController.m in Sources */,
 				A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */,

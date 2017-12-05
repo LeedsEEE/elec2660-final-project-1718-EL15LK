@@ -28,10 +28,9 @@
     
     [self.location requestWhenInUseAuthorization];
     self.actualMap.showsUserLocation = YES;
-    self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.01, self.zoomValue));
+    self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.01, 0.01));
     
-    
-    self.zoomLabel.text = [NSString stringWithFormat:@"Zoom: %f",self.zoomValue];
+    [self Markers];
     
 }
 
@@ -45,17 +44,26 @@
     
     self.location = [[CLLocationManager alloc] init];
     
+    [self Markers];
     [self UpdateMap];
     
 }
 
-- (IBAction)zoomSlider:(UISlider *)sender {
+
+- (IBAction)resetButtonPressed:(id)sender {
     
-    self.zoomLabel.text = [NSString stringWithFormat:@"Zoom: %f",sender.value];
+    self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.01, 0.01));
+    self.sliderPosition.value = 0.01;
+
+}
+
+- (IBAction)refreshButtonPressed:(id)sender {
+}
+
+- (IBAction)zoomSlider:(UISlider *)sender {
     self.zoomValue = sender.value;
     
-    self.zoomLabel.text = [NSString stringWithFormat:@"Zoom: %f",self.zoomValue];
-    
+    [self Markers];
     [self UpdateMap];
 }
 
@@ -64,6 +72,15 @@
     CLLocation *currentLocation = self.location.location;
     locationCoords = currentLocation.coordinate;
     self.actualMap.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(self.zoomValue, self.zoomValue));
-    
 }
+
+-(void)Markers{
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    CLLocationCoordinate2D cords = CLLocationCoordinate2DMake(53.58448, -1.55772);
+    annotation.title = @"test location";
+    annotation.coordinate = cords;
+    
+    [self.actualMap addAnnotation:annotation];
+}
+
 @end

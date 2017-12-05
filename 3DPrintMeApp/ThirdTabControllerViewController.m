@@ -25,14 +25,23 @@
     //Choices are predetermined, hence they will be stored in an array as strings
     choices = @[@"Fun Print",@"Aesthetics",@"Visual Prototype",@"Functional Prototype",@"Final Product"];
     
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
-    
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
+    
+    [self manipulation];
+
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+- (void) manipulation{
     
     self.data = [TabDataClass sharedInstance];                  // create shared instance of tab data class
     
@@ -63,42 +72,27 @@
     
     switch (self.data.selection) {
         case 0:
-            self.processLabel.text = @"1process goes here";
-            self.elaboratedReasoning.text = @"1reasoning goes here";
+            self.processLabel.text = @"FDM";
+            self.elaboratedReasoning.text = @"For a fun print, it is not required to have a very detailed print or the need for exotic materials. FDM is also the cheapest printing technique out of the available ones. Select PLA as the material.";
             break;
         case 1:
-            self.processLabel.text = @"2process goes here";
-            self.elaboratedReasoning.text = @"2reasoning goes here";
+            self.processLabel.text = @"FDM or SLA";
+            self.elaboratedReasoning.text = @"If details are required, SLA is best technique for this purpose. However, FDM has the advantage of having multiple colors and composite polymer materials such as wood and metal to elevate  the aesthetics of the print.";
             break;
         case 2:
-            self.processLabel.text = @"3process goes here";
-            self.elaboratedReasoning.text = @"3reasoning goes here";
+            self.processLabel.text = @"FDM or SLA";
+            self.elaboratedReasoning.text = @"For a prototype that is meant for just display, FDM and SLA process should suffice. If the model contains intricate amounts of detail, SLA is the superior process as it would be able to fully reflect the prototype.";
             break;
         case 3:
-            self.processLabel.text = @"4process goes here";
-            self.elaboratedReasoning.text = @"4reasoning goes here";
+            self.processLabel.text = @"FDM or SLS";
+            self.elaboratedReasoning.text = @"For a functional prototype, SLS or FDM is recommended. SLS is deemed as the manufacturing technique that is meant for final products. However, using exotic materials such as polycarbonate or carbon fibre could help achieve similar results.";
             break;
         case 4:
-            self.processLabel.text = @"5process goes here";
-            self.elaboratedReasoning.text = @"5reasoning goes here";
+            self.processLabel.text = @"SLS";
+            self.elaboratedReasoning.text = @"SLS is deemed as the manufacturing technique that is meant for producing final products. Although it is the most expensive technique, it ensures that the final product is of high quality.";
             break;
     }
     
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -37,7 +37,7 @@
                             <constraint firstItem="Lvd-bI-E8D" firstAttribute="top" secondItem="DPW-B6-KXp" secondAttribute="bottom" constant="25" id="pXk-Vq-KVa"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reasoning" image="Reason_black.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Reasoning" image="Reasoning" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" id="njN-au-Cjx"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
@@ -68,6 +68,7 @@
                                     <segment title="Dimensions"/>
                                     <segment title="Volume"/>
                                 </segments>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="selectControl:" destination="8mN-wB-EuW" eventType="valueChanged" id="vLi-XC-jfi"/>
                                 </connections>
@@ -179,7 +180,7 @@
                             <action selector="backgroundPressed:" destination="8mN-wB-EuW" eventType="touchUpInside" id="YOi-dZ-Irr"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dimensions" image="dimensions.png" id="nbg-KA-upM"/>
+                    <tabBarItem key="tabBarItem" title="Dimensions" image="Dimensions" id="nbg-KA-upM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="heightField" destination="mMS-iH-e2R" id="ttG-oE-FbO"/>
@@ -197,7 +198,7 @@
             </objects>
             <point key="canvasLocation" x="-102" y="-590"/>
         </scene>
-        <!--Item-->
+        <!--Services-->
         <scene sceneID="cZw-q6-oUA">
             <objects>
                 <viewController id="sxX-iI-1W8" customClass="MapViewController" sceneMemberID="viewController">
@@ -210,41 +211,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-GS-as0"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onk-RV-7Uw">
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.050000000000000003" maxValue="0.14999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="DJv-M8-RY6">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.01" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="i58-Ui-K3a">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="X05-gA-gSm"/>
+                                    <constraint firstAttribute="width" constant="275" id="b1q-P8-2yU"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" red="0.25490196078431371" green="0.31764705882352939" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.25490196079999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.81176470588235294" green="0.54117647058823526" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="zoomSlider:" destination="sxX-iI-1W8" eventType="valueChanged" id="nAG-BI-a8O"/>
+                                    <action selector="zoomSlider:" destination="sxX-iI-1W8" eventType="touchDragInside" id="juC-2q-8X4"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RM-cq-6Op">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHI-60-piZ">
+                                <state key="normal" title="Reset View">
+                                    <color key="titleColor" red="0.25490196079999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="sxX-iI-1W8" eventType="touchDown" id="Cgx-Ja-POc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-Zc-1J5">
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" red="0.25490196079999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="sxX-iI-1W8" eventType="touchDown" id="670-hT-5yc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0RM-cq-6Op" firstAttribute="centerX" secondItem="k2z-ll-2M2" secondAttribute="centerX" id="0Te-0i-PSp"/>
-                            <constraint firstItem="a6q-GS-as0" firstAttribute="top" secondItem="WCI-4Y-5VY" secondAttribute="bottom" id="3Id-Xa-Oyg"/>
-                            <constraint firstItem="a6q-GS-as0" firstAttribute="leading" secondItem="k2z-ll-2M2" secondAttribute="leadingMargin" constant="-16" id="85V-yv-NLA"/>
-                            <constraint firstItem="Onk-RV-7Uw" firstAttribute="top" secondItem="WCI-4Y-5VY" secondAttribute="bottom" id="G2e-c2-NfM"/>
-                            <constraint firstItem="FwZ-M1-CsG" firstAttribute="top" secondItem="DJv-M8-RY6" secondAttribute="bottom" constant="10" id="M8M-hh-9mB"/>
-                            <constraint firstItem="DJv-M8-RY6" firstAttribute="centerX" secondItem="k2z-ll-2M2" secondAttribute="centerX" id="NG0-Uj-IE8"/>
-                            <constraint firstItem="DJv-M8-RY6" firstAttribute="top" secondItem="0RM-cq-6Op" secondAttribute="bottom" constant="5" id="SXq-ZM-dzj"/>
-                            <constraint firstItem="FwZ-M1-CsG" firstAttribute="top" secondItem="a6q-GS-as0" secondAttribute="bottom" id="gTa-Vh-uR2"/>
-                            <constraint firstItem="Onk-RV-7Uw" firstAttribute="leading" secondItem="k2z-ll-2M2" secondAttribute="leadingMargin" id="lrc-fj-KMd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="a6q-GS-as0" secondAttribute="trailing" constant="-16" id="zpm-bq-DfX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gBu-Zc-1J5" secondAttribute="trailing" id="4q3-5d-8d4"/>
+                            <constraint firstItem="i58-Ui-K3a" firstAttribute="top" secondItem="gBu-Zc-1J5" secondAttribute="bottom" id="8OL-pV-iUc"/>
+                            <constraint firstItem="a6q-GS-as0" firstAttribute="bottom" secondItem="FwZ-M1-CsG" secondAttribute="top" id="8TO-lU-DDI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KHI-60-piZ" secondAttribute="leading" id="EXR-lw-E1g"/>
+                            <constraint firstAttribute="trailing" secondItem="a6q-GS-as0" secondAttribute="trailing" id="LUx-mf-9Jf"/>
+                            <constraint firstItem="FwZ-M1-CsG" firstAttribute="top" secondItem="i58-Ui-K3a" secondAttribute="bottom" constant="10" id="MQ7-FF-gbB"/>
+                            <constraint firstItem="a6q-GS-as0" firstAttribute="top" secondItem="WCI-4Y-5VY" secondAttribute="bottom" id="Or1-qd-ys6"/>
+                            <constraint firstItem="a6q-GS-as0" firstAttribute="leading" secondItem="k2z-ll-2M2" secondAttribute="leading" id="QtU-cB-YDW"/>
+                            <constraint firstItem="i58-Ui-K3a" firstAttribute="top" secondItem="KHI-60-piZ" secondAttribute="bottom" id="d75-LW-Qr9"/>
+                            <constraint firstItem="i58-Ui-K3a" firstAttribute="centerX" secondItem="a6q-GS-as0" secondAttribute="centerX" id="gyw-W7-8mZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Nearby.png" id="jtL-nr-6ax"/>
+                    <tabBarItem key="tabBarItem" title="Services" image="Map" id="jtL-nr-6ax"/>
                     <connections>
                         <outlet property="actualMap" destination="a6q-GS-as0" id="jad-RT-U2q"/>
-                        <outlet property="zoomLabel" destination="0RM-cq-6Op" id="uEY-Fm-jiV"/>
+                        <outlet property="sliderPosition" destination="i58-Ui-K3a" id="Bw2-jc-jfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ibs-qx-8A3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -343,7 +355,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-IY-BM0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-IY-BM0">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -391,7 +403,7 @@
                             <constraint firstItem="UGh-IY-BM0" firstAttribute="leading" secondItem="STR-TE-WOU" secondAttribute="leadingMargin" id="zf7-KF-w5I"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Suggestion" image="Suggestion_unlit.png" id="AIh-GU-EuG"/>
+                    <tabBarItem key="tabBarItem" title="Suggestion" image="Suggestion" id="AIh-GU-EuG"/>
                     <navigationItem key="navigationItem" id="GaM-2F-wxB"/>
                     <connections>
                         <outlet property="actualinputLabel" destination="xWR-b1-4fb" id="b85-eq-X2T"/>
@@ -509,7 +521,7 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="K1O-fT-8UY"/>
                                 </connections>
                             </button>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="SceneKit Scene2.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-kB-5eA">
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="SceneKit Scene.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-kB-5eA">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="baF-C2-Dq1"/>
                                     <constraint firstAttribute="height" constant="128" id="yaF-aE-RQR"/>
@@ -611,7 +623,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mr9-zm-LqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2104.3478260869565" y="826.63043478260875"/>
+            <point key="canvasLocation" x="-2106" y="826"/>
         </scene>
         <!--3D Print Me-->
         <scene sceneID="xQl-lf-ERk">
@@ -787,7 +799,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmB-9r-2Ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2106.4000000000001" y="1573.7631184407796"/>
+            <point key="canvasLocation" x="-2103" y="1513"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="0RD-Xm-851">
@@ -948,15 +960,17 @@
             </objects>
             <point key="canvasLocation" x="-1237.5999999999999" y="826.23688155922048"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="7gO-Lh-DUe"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.25490196079999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.25490196079999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="8mN-wB-EuW" kind="relationship" relationship="viewControllers" id="v2c-gY-HxG"/>
@@ -971,9 +985,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Nearby.png" width="71" height="71"/>
-        <image name="Reason_black.png" width="69" height="69"/>
-        <image name="Suggestion_unlit.png" width="55" height="71"/>
-        <image name="dimensions.png" width="69" height="69"/>
+        <image name="Dimensions" width="25" height="25"/>
+        <image name="Map" width="25" height="25"/>
+        <image name="Reasoning" width="25" height="25"/>
+        <image name="Suggestion" width="19" height="25"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

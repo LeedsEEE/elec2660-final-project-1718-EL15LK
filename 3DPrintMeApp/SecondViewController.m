@@ -30,8 +30,6 @@
     
     self.data = [TabDataClass sharedInstance];
     
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
-    
 }
 
 
