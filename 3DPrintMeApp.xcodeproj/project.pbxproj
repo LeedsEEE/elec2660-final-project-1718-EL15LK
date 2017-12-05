@@ -30,7 +30,7 @@
 		A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */; };
 		A09DF8D21FBB1A2900705C3A /* _DPrintMeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */; };
 		A09DF8DD1FBB1A2A00705C3A /* _DPrintMeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */; };
-		A0AA4D071FD5B43900280FBD /* SceneKit Scene2.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AA4D061FD5B43900280FBD /* SceneKit Scene2.scn */; };
+		A0AA4D071FD5B43900280FBD /* testObject.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AA4D061FD5B43900280FBD /* testObject.scn */; };
 		A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AAC6EF1FD5915F00152110 /* STLParser.m */; };
 		A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */; };
 		A0B85D641FC462C6006ABC1E /* LearningCentreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */; };
@@ -99,7 +99,7 @@
 		A09DF8D81FBB1A2A00705C3A /* 3DPrintMeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DPrintMeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DPrintMeAppUITests.m; sourceTree = "<group>"; };
 		A09DF8DE1FBB1A2A00705C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0AA4D061FD5B43900280FBD /* SceneKit Scene2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "SceneKit Scene2.scn"; path = "../SceneKit Scene2.scn"; sourceTree = "<group>"; };
+		A0AA4D061FD5B43900280FBD /* testObject.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = testObject.scn; path = ../testObject.scn; sourceTree = "<group>"; };
 		A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chambered_Bracelet.stl; sourceTree = "<group>"; };
 		A0AAC6ED1FD5914600152110 /* HxSTLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HxSTLParser.h; sourceTree = "<group>"; };
 		A0AAC6EE1FD5915F00152110 /* STLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLParser.h; sourceTree = "<group>"; };
@@ -109,7 +109,6 @@
 		A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningCentreTableViewController.m; sourceTree = "<group>"; };
 		A0B85D651FC469E6006ABC1E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		A0B85D661FC469E6006ABC1E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		A0C37DE91FD5ADA5006A9A48 /* 3dObject.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 3dObject.scn; sourceTree = "<group>"; };
 		A0C79AF61FC449D600379BE5 /* ThirdTabControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdTabControllerViewController.h; sourceTree = "<group>"; };
 		A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTabControllerViewController.m; sourceTree = "<group>"; };
 		A0C79AF91FC44C4B00379BE5 /* process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = process.h; sourceTree = "<group>"; };
@@ -178,9 +177,8 @@
 		A085C8EE1FC73B0500041D5B /* Multimedia Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A0AA4D061FD5B43900280FBD /* SceneKit Scene2.scn */,
+				A0AA4D061FD5B43900280FBD /* testObject.scn */,
 				A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */,
-				A0C37DE91FD5ADA5006A9A48 /* 3dObject.scn */,
 				A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */,
 				A08C05861FD1C82C0094BFD2 /* Logo Base.png */,
 				A08C057D1FD1C6C50094BFD2 /* Process Images */,
@@ -423,7 +421,7 @@
 				A08C057C1FD1C6300094BFD2 /* LaunchScreen.jpg in Resources */,
 				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
 				A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */,
-				A0AA4D071FD5B43900280FBD /* SceneKit Scene2.scn in Resources */,
+				A0AA4D071FD5B43900280FBD /* testObject.scn in Resources */,
 				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
 				A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */,
 				A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */,
