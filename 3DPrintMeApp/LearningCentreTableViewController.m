@@ -90,6 +90,7 @@
         process *tempProcess = [self.data.processes objectAtIndex:indexPath.row];
         
         cell.textLabel.text = tempProcess.name;
+
     }
     
     if (indexPath.section == 1){                                                                        //materials section

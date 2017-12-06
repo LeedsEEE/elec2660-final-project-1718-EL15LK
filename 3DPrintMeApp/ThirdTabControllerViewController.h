@@ -21,5 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *processLabel;
 @property (weak, nonatomic) IBOutlet UILabel *elaboratedReasoning;
 @property (weak, nonatomic) IBOutlet UILabel *costLabel;
+@property (weak, nonatomic) IBOutlet UILabel *suggestLabel;
+@property (weak, nonatomic) IBOutlet UILabel *costviewLabel;
+@property (weak, nonatomic) IBOutlet UILabel *warnLabel;
 
 @end

@@ -372,6 +372,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check inputs - Input might be zero!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZR-hY-PgB">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.83137254901960778" green="0.25098039215686274" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.58431372550000005" green="0.79215686269999996" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -399,6 +404,8 @@
                             <constraint firstItem="UGh-IY-BM0" firstAttribute="top" secondItem="rgr-7t-OGP" secondAttribute="bottom" constant="10" id="apj-XO-lsx"/>
                             <constraint firstItem="sSK-Js-OyC" firstAttribute="leading" secondItem="STR-TE-WOU" secondAttribute="leadingMargin" id="cDj-w4-kOU"/>
                             <constraint firstItem="U1L-ML-4Qz" firstAttribute="leading" secondItem="sSK-Js-OyC" secondAttribute="trailing" constant="10" id="elx-6u-7RN"/>
+                            <constraint firstItem="xZR-hY-PgB" firstAttribute="centerX" secondItem="STR-TE-WOU" secondAttribute="centerX" id="f26-su-2h6"/>
+                            <constraint firstItem="xZR-hY-PgB" firstAttribute="top" secondItem="x1W-oo-UKO" secondAttribute="bottom" constant="38.5" id="giu-xH-CSP"/>
                             <constraint firstItem="jlW-45-NUm" firstAttribute="top" secondItem="UGh-IY-BM0" secondAttribute="bottom" constant="20" id="mdM-pu-WAu"/>
                             <constraint firstItem="iEK-TL-A0t" firstAttribute="top" secondItem="Zzw-X5-fWL" secondAttribute="bottom" constant="10" id="mgw-od-3OO"/>
                             <constraint firstItem="xWR-b1-4fb" firstAttribute="leading" secondItem="bZx-w7-zQa" secondAttribute="trailing" constant="10" id="o0w-yu-0zF"/>
@@ -416,10 +423,13 @@
                         <outlet property="calcVolumeLabel" destination="Zzw-X5-fWL" id="ijM-Fo-4jC"/>
                         <outlet property="calcVolumeTag" destination="M3T-Rm-odt" id="2TD-XY-pXa"/>
                         <outlet property="costLabel" destination="jlW-45-NUm" id="qua-JI-ihi"/>
+                        <outlet property="costviewLabel" destination="DNF-JC-dDL" id="CZ8-4J-VbF"/>
                         <outlet property="elaboratedReasoning" destination="UGh-IY-BM0" id="VkO-t0-TnC"/>
                         <outlet property="processLabel" destination="un9-eK-sF9" id="FTl-G7-TQW"/>
                         <outlet property="reasonLabel" destination="iEK-TL-A0t" id="8C1-qx-ah7"/>
+                        <outlet property="suggestLabel" destination="rgr-7t-OGP" id="zoX-iC-wrZ"/>
                         <outlet property="typeinputLabel" destination="U1L-ML-4Qz" id="NVe-CO-Sv1"/>
+                        <outlet property="warnLabel" destination="xZR-hY-PgB" id="hlO-CY-MtP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXY-Wa-33z" userLabel="First Responder" sceneMemberID="firstResponder"/>
