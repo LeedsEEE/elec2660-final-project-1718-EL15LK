@@ -112,6 +112,54 @@
     [self.data setWidthValue: [self.widthField.text floatValue]];
     [self.data setHeightValue: [self.heightField.text floatValue]];
     [self.data setVolumeValue:[self.volumeField.text floatValue]];
+    
+    if ([self.lengthField.text floatValue] > 250.00) {                                                      // set a limit on the length field
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Oops!"
+                                                                       message:@"It looks like you might have entered a value too large! Maximum value is 250."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {[self.lengthField becomeFirstResponder];}];
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+    
+    if ([self.widthField.text floatValue] > 250.00) {                                                      // set a limit on the width field
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Oops!"
+                                                                       message:@"It looks like you might have entered a value too large! Maximum value is 250."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {[self.widthField becomeFirstResponder];}];
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+    
+    if ([self.heightField.text floatValue] > 250.00) {                                                      // set a limit on the height field
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Oops!"
+                                                                       message:@"It looks like you might have entered a value too large! Maximum value is 250."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {[self.heightField becomeFirstResponder];}];
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+    
+    if ([self.volumeField.text floatValue] > 15625.00) {                                                      // set a limit on the volume field
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Oops!"
+                                                                       message:@"It looks like you might have entered a value too large! Maximum value is 15625."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {[self.volumeField becomeFirstResponder];}];
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
 }
 
 #pragma mark Text Field Delegate Methods
@@ -122,6 +170,19 @@
     
     return YES;
 }
+
+/*- (void)valueChecker:(NSObject*)field {
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Oops!"
+                                                                   message:@"It looks like you might have entered a value too large!"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {[*field becomeFirstResponder];}];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}*/
 
 
 @end
