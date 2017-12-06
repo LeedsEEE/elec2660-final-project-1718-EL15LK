@@ -56,6 +56,10 @@
         self.durabilityLabel.textColor = appRedColor;
     }
     
+    self.imageView.layer.masksToBounds = true;
+    self.imageView.layer.borderColor = [navbarColor CGColor];
+    self.imageView.layer.borderWidth = 2.0;
+    self.imageView.layer.cornerRadius = 5.0;
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     

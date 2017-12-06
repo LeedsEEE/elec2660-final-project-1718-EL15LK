@@ -32,6 +32,11 @@
     self.materialsLabel.text = self.process.materialusage;
     self.processImage.image = [UIImage imageNamed: self.process.imagelink];
     
+    self.processImage.layer.masksToBounds = true;
+    self.processImage.layer.borderColor = [navbarColor CGColor];
+    self.processImage.layer.borderWidth = 2.0;
+    self.processImage.layer.cornerRadius = 5.0;
+    
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     
 }
