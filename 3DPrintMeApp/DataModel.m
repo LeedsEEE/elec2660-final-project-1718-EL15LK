@@ -55,6 +55,7 @@
         
 #pragma mark materials data model
 //Specific information for each of the materials are from www.3dhubs.com & all3dp.com
+//Photos from all3dp.com (https://all3dp.com/1/3d-printer-filament-types-3d-printing-3d-filament/)
         
         self.materials = [NSMutableArray array];
         
@@ -66,6 +67,7 @@
         PLA.strength = @"High";
         PLA.flexibility = @"Low";
         PLA.durability = @"Medium";
+        PLA.imagelink = @"Material_PLA.jpg";
         
         material *ABS = [[material alloc]	init];
         ABS.name = @"Acrylonitrile Butadiene Styrene (ABS)";
@@ -75,6 +77,7 @@
         ABS.strength = @"High";
         ABS.flexibility = @"Medium";
         ABS.durability = @"High";
+        ABS.imagelink = @"Material_ABS.jpg";
 
         material *PETg = [[material alloc]	init];
         PETg.name = @"Polyethylene Terephthalate (PET)";
@@ -84,6 +87,7 @@
         PETg.strength = @"High";
         PETg.flexibility = @"Medium";
         PETg.durability = @"High";
+        PETg.imagelink = @"Material_PETG.jpg";
         
         material *Nylon = [[material alloc]	init];
         Nylon.name = @"Nylon";
@@ -93,6 +97,7 @@
         Nylon.strength = @"High";
         Nylon.flexibility = @"High";
         Nylon.durability = @"High";
+        Nylon.imagelink = @"Material_Nylon.jpg";
         
         material *TPU = [[material alloc]	init];
         TPU.name = @"Thermoplastic Polyurethane (TPU)";
@@ -102,6 +107,7 @@
         TPU.strength = @"Medium";
         TPU.flexibility = @"Very High";
         TPU.durability = @"Very High";
+        TPU.imagelink = @"Material_TPU.jpg";
         
         material *PC = [[material alloc]	init];
         PC.name = @"Polycarbonate (PC)";
@@ -111,6 +117,7 @@
         PC.strength = @"Very High";
         PC.flexibility = @"Medium";
         PC.durability = @"Very High";
+        PC.imagelink = @"Material_PC.jpg";
         
         material *ASA = [[material alloc]	init];
         ASA.name = @"Acrylonitrile Styrene Acrylate (ASA)";
@@ -120,6 +127,7 @@
         ASA.strength = @"High";
         ASA.flexibility = @"Medium";
         ASA.durability = @"High";
+        ASA.imagelink = @"Material_ASA.jpg";
 
         
         [self.materials addObject:PLA];     //index 0

@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *strengthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flexibilityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *durabilityLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (strong,nonatomic) material *material;
 

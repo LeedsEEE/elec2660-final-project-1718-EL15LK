@@ -54,12 +54,6 @@
 
 }
 
-- (IBAction)refreshButtonPressed:(id)sender {
-    
-    [self Markers];
-    
-}
-
 - (IBAction)zoomSlider:(UISlider *)sender {
     self.zoomValue = sender.value;
     [self UpdateMap];

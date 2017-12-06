@@ -18,5 +18,6 @@
 @property (strong,nonatomic) NSString *strength;
 @property (strong,nonatomic) NSString *flexibility;
 @property (strong,nonatomic) NSString *durability;
+@property (strong,nonatomic) NSString *imagelink;
 
 @end

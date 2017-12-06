@@ -21,6 +21,5 @@
 
 - (IBAction)zoomSlider:(UISlider *)sender;
 - (IBAction)resetButtonPressed:(id)sender;
-- (IBAction)refreshButtonPressed:(id)sender;
 
 @end

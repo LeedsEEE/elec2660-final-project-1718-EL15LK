@@ -20,6 +20,7 @@
     
     self.infoLabel.text = self.material.quickinfo;
     self.processLabel.text = self.material.process;
+    self.imageView.image = [UIImage imageNamed: self.material.imagelink];
     
     self.priceLabel.text = self.material.cost;
     if ([self.priceLabel.text  isEqual: @"$"]) {
@@ -54,6 +55,7 @@
     } else if ([self.durabilityLabel.text isEqual: @"Low"]){
         self.durabilityLabel.textColor = appRedColor;
     }
+    
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     

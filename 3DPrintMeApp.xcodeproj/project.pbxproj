@@ -33,6 +33,13 @@
 		A0AA4D071FD5B43900280FBD /* testObject.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AA4D061FD5B43900280FBD /* testObject.scn */; };
 		A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AAC6EF1FD5915F00152110 /* STLParser.m */; };
 		A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */; };
+		A0ACEE811FD85FBF0083921B /* Material_ABS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7A1FD85FBF0083921B /* Material_ABS.jpg */; };
+		A0ACEE821FD85FBF0083921B /* Material_ASA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7B1FD85FBF0083921B /* Material_ASA.jpg */; };
+		A0ACEE831FD85FBF0083921B /* Material_Nylon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7C1FD85FBF0083921B /* Material_Nylon.jpg */; };
+		A0ACEE841FD85FBF0083921B /* Material_PC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7D1FD85FBF0083921B /* Material_PC.jpg */; };
+		A0ACEE851FD85FBF0083921B /* Material_PETG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7E1FD85FBF0083921B /* Material_PETG.jpg */; };
+		A0ACEE861FD85FBF0083921B /* Material_PLA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7F1FD85FBF0083921B /* Material_PLA.jpg */; };
+		A0ACEE871FD85FBF0083921B /* Material_TPU.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE801FD85FBF0083921B /* Material_TPU.jpg */; };
 		A0B85D641FC462C6006ABC1E /* LearningCentreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */; };
 		A0B85D671FC469E6006ABC1E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B85D661FC469E6006ABC1E /* DetailViewController.m */; };
 		A0C79AF81FC449D600379BE5 /* ThirdTabControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */; };
@@ -105,6 +112,13 @@
 		A0AAC6EE1FD5915F00152110 /* STLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLParser.h; sourceTree = "<group>"; };
 		A0AAC6EF1FD5915F00152110 /* STLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLParser.m; sourceTree = "<group>"; };
 		A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
+		A0ACEE7A1FD85FBF0083921B /* Material_ABS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_ABS.jpg; sourceTree = "<group>"; };
+		A0ACEE7B1FD85FBF0083921B /* Material_ASA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_ASA.jpg; sourceTree = "<group>"; };
+		A0ACEE7C1FD85FBF0083921B /* Material_Nylon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_Nylon.jpg; sourceTree = "<group>"; };
+		A0ACEE7D1FD85FBF0083921B /* Material_PC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_PC.jpg; sourceTree = "<group>"; };
+		A0ACEE7E1FD85FBF0083921B /* Material_PETG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_PETG.jpg; sourceTree = "<group>"; };
+		A0ACEE7F1FD85FBF0083921B /* Material_PLA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_PLA.jpg; sourceTree = "<group>"; };
+		A0ACEE801FD85FBF0083921B /* Material_TPU.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_TPU.jpg; sourceTree = "<group>"; };
 		A0B85D621FC462C6006ABC1E /* LearningCentreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearningCentreTableViewController.h; sourceTree = "<group>"; };
 		A0B85D631FC462C6006ABC1E /* LearningCentreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningCentreTableViewController.m; sourceTree = "<group>"; };
 		A0B85D651FC469E6006ABC1E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -177,13 +191,10 @@
 		A085C8EE1FC73B0500041D5B /* Multimedia Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A0AA4D061FD5B43900280FBD /* testObject.scn */,
-				A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */,
-				A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */,
-				A08C05861FD1C82C0094BFD2 /* Logo Base.png */,
+				A0ACEE791FD85F470083921B /* Material Images */,
+				A0ACEE781FD85F2D0083921B /* Other Images */,
+				A0ACEE771FD85F160083921B /* Scene Files */,
 				A08C057D1FD1C6C50094BFD2 /* Process Images */,
-				A08C057B1FD1C6300094BFD2 /* LaunchScreen.jpg */,
-				A031A4101FD6AD04003842A5 /* TopBar.png */,
 			);
 			name = "Multimedia Resources";
 			sourceTree = "<group>";
@@ -307,6 +318,40 @@
 			path = 3DPrintMeAppUITests;
 			sourceTree = "<group>";
 		};
+		A0ACEE771FD85F160083921B /* Scene Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */,
+				A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */,
+				A0AA4D061FD5B43900280FBD /* testObject.scn */,
+			);
+			name = "Scene Files";
+			sourceTree = "<group>";
+		};
+		A0ACEE781FD85F2D0083921B /* Other Images */ = {
+			isa = PBXGroup;
+			children = (
+				A031A4101FD6AD04003842A5 /* TopBar.png */,
+				A08C057B1FD1C6300094BFD2 /* LaunchScreen.jpg */,
+				A08C05861FD1C82C0094BFD2 /* Logo Base.png */,
+			);
+			name = "Other Images";
+			sourceTree = "<group>";
+		};
+		A0ACEE791FD85F470083921B /* Material Images */ = {
+			isa = PBXGroup;
+			children = (
+				A0ACEE7A1FD85FBF0083921B /* Material_ABS.jpg */,
+				A0ACEE7B1FD85FBF0083921B /* Material_ASA.jpg */,
+				A0ACEE7C1FD85FBF0083921B /* Material_Nylon.jpg */,
+				A0ACEE7D1FD85FBF0083921B /* Material_PC.jpg */,
+				A0ACEE7E1FD85FBF0083921B /* Material_PETG.jpg */,
+				A0ACEE7F1FD85FBF0083921B /* Material_PLA.jpg */,
+				A0ACEE801FD85FBF0083921B /* Material_TPU.jpg */,
+			);
+			name = "Material Images";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,13 +465,20 @@
 				A08C05871FD1C82C0094BFD2 /* Logo Base.png in Resources */,
 				A08C057C1FD1C6300094BFD2 /* LaunchScreen.jpg in Resources */,
 				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
+				A0ACEE841FD85FBF0083921B /* Material_PC.jpg in Resources */,
 				A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */,
 				A0AA4D071FD5B43900280FBD /* testObject.scn in Resources */,
 				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
+				A0ACEE871FD85FBF0083921B /* Material_TPU.jpg in Resources */,
+				A0ACEE821FD85FBF0083921B /* Material_ASA.jpg in Resources */,
 				A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */,
+				A0ACEE831FD85FBF0083921B /* Material_Nylon.jpg in Resources */,
 				A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */,
 				A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */,
 				A031A4111FD6AD04003842A5 /* TopBar.png in Resources */,
+				A0ACEE851FD85FBF0083921B /* Material_PETG.jpg in Resources */,
+				A0ACEE861FD85FBF0083921B /* Material_PLA.jpg in Resources */,
+				A0ACEE811FD85FBF0083921B /* Material_ABS.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -210,7 +210,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-GS-as0">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-GS-as0">
                                 <frame key="frameInset" width="1000" height="1000"/>
                             </mapView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.01" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="i58-Ui-K3a">
@@ -232,19 +232,9 @@
                                     <action selector="resetButtonPressed:" destination="sxX-iI-1W8" eventType="touchDown" id="Cgx-Ja-POc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-Zc-1J5">
-                                <state key="normal" title="Refresh">
-                                    <color key="titleColor" red="0.25490196079999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="refreshButtonPressed:" destination="sxX-iI-1W8" eventType="touchDown" id="670-hT-5yc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="gBu-Zc-1J5" secondAttribute="trailing" id="4q3-5d-8d4"/>
-                            <constraint firstItem="i58-Ui-K3a" firstAttribute="top" secondItem="gBu-Zc-1J5" secondAttribute="bottom" id="8OL-pV-iUc"/>
                             <constraint firstItem="a6q-GS-as0" firstAttribute="bottom" secondItem="FwZ-M1-CsG" secondAttribute="top" id="8TO-lU-DDI"/>
                             <constraint firstAttribute="leadingMargin" secondItem="KHI-60-piZ" secondAttribute="leading" id="EXR-lw-E1g"/>
                             <constraint firstAttribute="trailing" secondItem="a6q-GS-as0" secondAttribute="trailing" id="LUx-mf-9Jf"/>
@@ -537,12 +527,6 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="K1O-fT-8UY"/>
                                 </connections>
                             </button>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="testObject.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-kB-5eA">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="baF-C2-Dq1"/>
-                                    <constraint firstAttribute="height" constant="128" id="yaF-aE-RQR"/>
-                                </constraints>
-                            </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" red="0.58431372549019611" green="0.792156862745098" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -551,9 +535,7 @@
                             <constraint firstItem="Stm-3k-bq3" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="HTR-Sa-zv8"/>
                             <constraint firstItem="Stm-3k-bq3" firstAttribute="top" secondItem="fIF-hi-TxB" secondAttribute="bottom" constant="25" id="KDg-ib-hSd"/>
                             <constraint firstItem="p4B-BG-DdN" firstAttribute="top" secondItem="Stm-3k-bq3" secondAttribute="bottom" constant="25" id="MPN-Og-bVy"/>
-                            <constraint firstItem="JXN-kB-5eA" firstAttribute="top" secondItem="h0Z-Zu-zxB" secondAttribute="bottom" constant="20" id="S0J-gC-AuS"/>
                             <constraint firstItem="h0Z-Zu-zxB" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="YSK-Mm-VTL"/>
-                            <constraint firstItem="JXN-kB-5eA" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="Zos-Np-voM"/>
                             <constraint firstItem="p4B-BG-DdN" firstAttribute="leading" secondItem="Ava-pa-o87" secondAttribute="leadingMargin" id="gx9-SB-vEw"/>
                             <constraint firstItem="aPU-3S-e84" firstAttribute="top" secondItem="rFK-K0-7cV" secondAttribute="bottom" constant="40" id="mCS-Fc-Sj7"/>
                             <constraint firstItem="rFK-K0-7cV" firstAttribute="top" secondItem="p4B-BG-DdN" secondAttribute="bottom" constant="25" id="oec-RQ-i71"/>
@@ -567,9 +549,6 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="SCNScene" destination="JXN-kB-5eA" id="WyD-Bl-PVk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ef1-0o-eJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -590,11 +569,11 @@
                                 <rect key="frame" x="0.0" y="56" width="375" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="InX-sj-grc" id="gjZ-xW-Tt8">
-                                    <frame key="frameInset" width="375" height="45"/>
+                                    <frame key="frameInset" width="375" height="45.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLE-N2-f8z">
-                                            <frame key="frameInset" minX="15" width="345" height="45"/>
+                                            <frame key="frameInset" minX="15" width="345" height="45.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -611,11 +590,11 @@
                                 <rect key="frame" x="0.0" y="102" width="375" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JKs-um-Qxl" id="yXb-SP-vBq">
-                                    <frame key="frameInset" width="375" height="45"/>
+                                    <frame key="frameInset" width="375" height="45.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gJ7-kr-u7o">
-                                            <frame key="frameInset" minX="15" width="345" height="45"/>
+                                            <frame key="frameInset" minX="15" width="345" height="45.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -807,6 +786,7 @@
                     <connections>
                         <outlet property="durabilityLabel" destination="7AJ-pu-K99" id="6kp-6d-luq"/>
                         <outlet property="flexibilityLabel" destination="FBQ-r5-Xeu" id="9K5-wb-XOx"/>
+                        <outlet property="imageView" destination="f5q-7s-Xht" id="taw-P8-OHb"/>
                         <outlet property="infoLabel" destination="1YA-J0-iFE" id="Ogl-FU-h9x"/>
                         <outlet property="priceLabel" destination="n0a-yP-RZd" id="cP2-5v-rbl"/>
                         <outlet property="processLabel" destination="Luy-mj-AgE" id="nvR-DS-Ot0"/>
