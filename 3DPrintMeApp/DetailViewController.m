@@ -11,6 +11,8 @@
 @interface DetailViewController ()
 // FDM and SLA image from website: http://apm-designs.com/fdm-vs-sla-3d-printer-tech-comparison
 // original SLS image By Materialgeeza - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4032088 . Modified for consistency.
+// Adding borders / curved edges from: https://stackoverflow.com/questions/34984966
+
 {
     NSArray *images;
     
@@ -21,9 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    images = @[@"FDM_printing.png",@"SLA_printing.png",@"SLA_printing.png"];
     
     self.quickInfo.text = self.process.quickinfo;
     self.priceLabel.text = [NSString stringWithFormat:@"Around £%.2f per mm3",self.process.cost];

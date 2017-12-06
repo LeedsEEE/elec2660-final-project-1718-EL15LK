@@ -25,3 +25,10 @@
 #define appGreenColor UIColorFromHex(0x34983E)                      //green color defined for table view elements
 
 
+// REFERENCES
+
+// FDM and SLA image from website: http://apm-designs.com/fdm-vs-sla-3d-printer-tech-comparison
+// original SLS image By Materialgeeza - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4032088 . Modified for consistency.
+// Adding borders / curved edges from: https://stackoverflow.com/questions/34984966
+
+

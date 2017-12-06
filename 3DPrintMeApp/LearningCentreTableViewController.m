@@ -108,10 +108,8 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 
     if ([[segue identifier] isEqualToString:@"ShowProcessDetails"]) {
         
@@ -144,7 +142,10 @@
 -(void)tableView:(UITableView*)tableView willDisplayHeaderView:(nonnull UIView *)view forSection:(NSInteger)section
 {
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
-    [header.textLabel setTextColor:[UIColor whiteColor]];
-    header.contentView.backgroundColor = baseColor;
+    
+    header.contentView.backgroundColor = baseColor;                                                             // set the background color to be basecolor (for consistency)
+    header.textLabel.textColor = [UIColor whiteColor];                                                          // set header text to be white color
+    header.textLabel.font = [UIFont systemFontOfSize:18];                                                   // set header text to be 18 size bold type
+
 }
 @end

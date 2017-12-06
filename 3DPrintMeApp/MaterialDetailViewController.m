@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.infoLabel.text = self.material.quickinfo;
     self.processLabel.text = self.material.process;
