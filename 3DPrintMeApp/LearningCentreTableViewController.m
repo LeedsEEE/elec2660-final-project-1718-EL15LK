@@ -17,10 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //
     self.data = [[DataModel alloc] init];
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     self.tableView.backgroundColor = baseColor;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,19 +35,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 2;                                                                                                       // 2 sections are present - materials and processes
+    //return 2 sections - process and materials
+    return 2;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
+    //return the number of rows according to the number of elements in the respective array
     NSInteger numberOfRows = 0;
     
     if (section == 0) {
-        numberOfRows = self.data.processes.count;                                                                   // setup number of rows according to number of elements in processes array.
+        
+        numberOfRows = self.data.processes.count;
+        
     }
     
     if (section == 1) {
-        numberOfRows = self.data.materials.count;                                                                   // setup number of rows according to number of elements in materials array.
+        
+        numberOfRows = self.data.materials.count;
+        
     }
     
     return numberOfRows;
@@ -53,22 +62,28 @@
 
 // Setting up section headers
 // Code is from https://stackoverflow.com/questions/10505708/how-to-set-the-uitableview-section-title-programmatically-iphone-ipad
-
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
     NSString *sectionName;
     switch (section) {
         
-        case 0:                                                                         //Section 0 is processes
+        //section 0 is processes
+        case 0:
+            
             sectionName = NSLocalizedString(@"Processes", @"Processes");
+            
             break;
        
-        case 1:                                                                         //Section 1 is materials
+        //section 1 is materials
+        case 1:
+            
             sectionName = NSLocalizedString(@"Materials", @"Materials");
             
+            break;
     }
+    
     return sectionName;
+    
 }
 
 #pragma mark - Data Supply
@@ -77,21 +92,24 @@
     
     UITableViewCell *cell;
     
-    if (indexPath.section == 0){                                                                        //processes section
+    if (indexPath.section == 0) {
         
         cell = [tableView dequeueReusableCellWithIdentifier:@"ProcessCell" forIndexPath:indexPath];
         process *tempProcess = [self.data.processes objectAtIndex:indexPath.row];
         
+        //take name from temporary data
         cell.textLabel.text = tempProcess.name;
 
     }
     
-    if (indexPath.section == 1){                                                                        //materials section
+    if (indexPath.section == 1){
         
         cell = [tableView dequeueReusableCellWithIdentifier:@"MaterialCell" forIndexPath:indexPath];
         material *tempMaterial = [self.data.materials objectAtIndex:indexPath.row];
         
+        //take name from temporary data
         cell.textLabel.text = tempMaterial.name;
+        
     }
     
     return cell;
@@ -107,6 +125,7 @@
 
     if ([[segue identifier] isEqualToString:@"ShowProcessDetails"]) {
         
+        //set appropriate view controller as destination view controller if string is equal
         DetailViewController *destinationViewController = [segue destinationViewController];                    //if it is the ShowProcessDetails segue, go to DetailViewController
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -115,11 +134,14 @@
             
             process *tempprocess = [self.data.processes objectAtIndex: indexPath.row];
             destinationViewController.process = tempprocess;
+            
         }
+        
     }
 
     if ([[segue identifier] isEqualToString:@"ShowMaterialDetails"]) {
-            
+        
+        //set appropriate view controller as destination view controller if string is equal
         MaterialDetailViewController *destinationViewController = [segue destinationViewController];           //if it is the ShowMaterialDetails segue, go to MaterialDetailViewController
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -133,8 +155,8 @@
     
 }
 
--(void)tableView:(UITableView*)tableView willDisplayHeaderView:(nonnull UIView *)view forSection:(NSInteger)section
-{
+-(void)tableView:(UITableView*)tableView willDisplayHeaderView:(nonnull UIView *)view forSection:(NSInteger)section {
+    
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
     
     header.contentView.backgroundColor = baseColor;                                                             // set the background color to be basecolor (for consistency)
@@ -142,4 +164,5 @@
     header.textLabel.font = [UIFont systemFontOfSize:18];                                                   // set header text to be 18 size bold type
 
 }
+
 @end

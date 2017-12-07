@@ -17,8 +17,6 @@
 		A031A4111FD6AD04003842A5 /* TopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A031A4101FD6AD04003842A5 /* TopBar.png */; };
 		A033421F1FD6CBB8003E6F97 /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = A033421E1FD6CBB8003E6F97 /* TabController.m */; };
 		A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */; };
-		A058F3441FD96EC300BD4FAA /* ExampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A058F3431FD96EC300BD4FAA /* ExampleModel.m */; };
-		A058F3471FD9739100BD4FAA /* examplesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A058F3461FD9739100BD4FAA /* examplesTableViewController.m */; };
 		A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A08581F31FD1577A00781E53 /* SLS_printing.jpg */; };
 		A08582071FD1790200781E53 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08582061FD1790200781E53 /* StartViewController.m */; };
 		A085C8EB1FC73AA300041D5B /* material.m in Sources */ = {isa = PBXBuildFile; fileRef = A085C8EA1FC73AA300041D5B /* material.m */; };
@@ -47,7 +45,7 @@
 		A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AFD1FC459D800379BE5 /* DataModel.m */; };
 		A0D28A481FD93FE00086737E /* Hub.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D28A471FD93FE00086737E /* Hub.m */; };
 		A0D28A4E1FD95B800086737E /* modelViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D28A4D1FD95B800086737E /* modelViewer.m */; };
-		A0D28A531FD963940086737E /* 3dObject.stl in Resources */ = {isa = PBXBuildFile; fileRef = A0D28A521FD963940086737E /* 3dObject.stl */; };
+		A0D28A531FD963940086737E /* iPhoneMoney.stl in Resources */ = {isa = PBXBuildFile; fileRef = A0D28A521FD963940086737E /* iPhoneMoney.stl */; };
 		A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331601FD0154700361E11 /* FDM_printing.png */; };
 		A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331611FD0154A00361E11 /* SLA_printing.png */; };
 /* End PBXBuildFile section */
@@ -85,10 +83,6 @@
 		A033421E1FD6CBB8003E6F97 /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
 		A03AD3DD1FC85B78009F1269 /* MaterialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDetailViewController.h; sourceTree = "<group>"; };
 		A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailViewController.m; sourceTree = "<group>"; };
-		A058F3421FD96EC300BD4FAA /* ExampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleModel.h; sourceTree = "<group>"; };
-		A058F3431FD96EC300BD4FAA /* ExampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleModel.m; sourceTree = "<group>"; };
-		A058F3451FD9739100BD4FAA /* examplesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = examplesTableViewController.h; sourceTree = "<group>"; };
-		A058F3461FD9739100BD4FAA /* examplesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = examplesTableViewController.m; sourceTree = "<group>"; };
 		A08581F31FD1577A00781E53 /* SLS_printing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SLS_printing.jpg; sourceTree = "<group>"; };
 		A08582051FD1790200781E53 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		A08582061FD1790200781E53 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
@@ -137,7 +131,7 @@
 		A0D28A471FD93FE00086737E /* Hub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hub.m; sourceTree = "<group>"; };
 		A0D28A4C1FD95B800086737E /* modelViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelViewer.h; sourceTree = "<group>"; };
 		A0D28A4D1FD95B800086737E /* modelViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modelViewer.m; sourceTree = "<group>"; };
-		A0D28A521FD963940086737E /* 3dObject.stl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3dObject.stl; sourceTree = "<group>"; };
+		A0D28A521FD963940086737E /* iPhoneMoney.stl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iPhoneMoney.stl; sourceTree = "<group>"; };
 		A0F331601FD0154700361E11 /* FDM_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FDM_printing.png; sourceTree = "<group>"; };
 		A0F331611FD0154A00361E11 /* SLA_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SLA_printing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,17 +184,8 @@
 				A0AAC6ED1FD5914600152110 /* HxSTLParser.h */,
 				A0D28A4C1FD95B800086737E /* modelViewer.h */,
 				A0D28A4D1FD95B800086737E /* modelViewer.m */,
-				A058F3451FD9739100BD4FAA /* examplesTableViewController.h */,
-				A058F3461FD9739100BD4FAA /* examplesTableViewController.m */,
 			);
 			name = "3D Viewer";
-			sourceTree = "<group>";
-		};
-		A058F3411FD96E8C00BD4FAA /* STL Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "STL Files";
 			sourceTree = "<group>";
 		};
 		A085C8ED1FC73AD500041D5B /* Data Model Related */ = {
@@ -216,8 +201,6 @@
 				A029A3521FCD72A600DF6AA5 /* TabDataClass.m */,
 				A0D28A461FD93FE00086737E /* Hub.h */,
 				A0D28A471FD93FE00086737E /* Hub.m */,
-				A058F3421FD96EC300BD4FAA /* ExampleModel.h */,
-				A058F3431FD96EC300BD4FAA /* ExampleModel.m */,
 			);
 			name = "Data Model Related";
 			sourceTree = "<group>";
@@ -225,8 +208,7 @@
 		A085C8EE1FC73B0500041D5B /* Multimedia Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A058F3411FD96E8C00BD4FAA /* STL Files */,
-				A0D28A521FD963940086737E /* 3dObject.stl */,
+				A0D28A521FD963940086737E /* iPhoneMoney.stl */,
 				A0ACEE791FD85F470083921B /* Material Images */,
 				A0ACEE781FD85F2D0083921B /* Other Images */,
 				A08C057D1FD1C6C50094BFD2 /* Process Images */,
@@ -494,7 +476,7 @@
 				A0ACEE871FD85FBF0083921B /* Material_TPU.jpg in Resources */,
 				A0ACEE821FD85FBF0083921B /* Material_ASA.jpg in Resources */,
 				A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */,
-				A0D28A531FD963940086737E /* 3dObject.stl in Resources */,
+				A0D28A531FD963940086737E /* iPhoneMoney.stl in Resources */,
 				A0ACEE831FD85FBF0083921B /* Material_Nylon.jpg in Resources */,
 				A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */,
 				A031A4111FD6AD04003842A5 /* TopBar.png in Resources */,
@@ -527,7 +509,6 @@
 			files = (
 				A085C8EB1FC73AA300041D5B /* material.m in Sources */,
 				A0D28A4E1FD95B800086737E /* modelViewer.m in Sources */,
-				A058F3441FD96EC300BD4FAA /* ExampleModel.m in Sources */,
 				A0085D3C1FC751560002C579 /* FirstTabViewController.m in Sources */,
 				A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */,
 				A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */,
@@ -539,7 +520,6 @@
 				A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */,
 				A029A3531FCD72A600DF6AA5 /* TabDataClass.m in Sources */,
 				A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */,
-				A058F3471FD9739100BD4FAA /* examplesTableViewController.m in Sources */,
 				A09DF8B61FBB1A2700705C3A /* main.m in Sources */,
 				A08582071FD1790200781E53 /* StartViewController.m in Sources */,
 				A0B85D641FC462C6006ABC1E /* LearningCentreTableViewController.m in Sources */,

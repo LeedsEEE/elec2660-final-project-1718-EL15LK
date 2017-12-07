@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     //Choices are predetermined, hence they will be stored in an array as strings
     choices = @[@"Fun Print",@"Aesthetics",@"Visual Prototype",@"Functional Prototype",@"Final Product"];
@@ -28,14 +27,16 @@
     self.pickerReason.delegate = self;
     self.pickerReason.dataSource = self;
     
+    //create shared instance of the tab data class
     self.data = [TabDataClass sharedInstance];
     
 }
 
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
 
@@ -44,23 +45,30 @@
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     
+    //return string according to the array element in the row
     return choices[row];
     
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
+    //set the selection property of the data to the selected row of the picker
     [self.data setSelection:[self.pickerReason selectedRowInComponent:0]];
 }
 
 #pragma mark DataSource Methods
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    
+    //only one column is needed
     return 1;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return choices.count;                                                        //  Number of Rows is determined by the array size
+    
+    // Number of rows is determined by the array size
+    return choices.count;
+   
 }
 
 @end

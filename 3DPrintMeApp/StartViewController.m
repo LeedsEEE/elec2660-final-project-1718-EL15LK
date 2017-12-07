@@ -7,8 +7,7 @@
 //
 
 #import "StartViewController.h"
-#import "AppConstants.h"
-#import "HxSTLParser.h"                 //https://github.com/victorgama/HxSTLParser
+#import "AppConstants.h"                            //import constants header
 
 @interface StartViewController ()
 
@@ -18,14 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    //Set header logo
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 @end

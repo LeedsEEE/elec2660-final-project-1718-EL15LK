@@ -12,11 +12,14 @@
 
 @interface DetailViewController : UIViewController
 
+//Dynamic labels in view
 @property (weak, nonatomic) IBOutlet UILabel *quickInfo;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *resolutionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *qualityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *materialsLabel;
+
+//Dynamic imageview in view
 @property (weak, nonatomic) IBOutlet UIImageView *processImage;
 
 @property (strong,nonatomic) process *process;

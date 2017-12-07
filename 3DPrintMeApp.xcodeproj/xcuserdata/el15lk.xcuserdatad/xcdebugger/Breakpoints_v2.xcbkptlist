@@ -25,54 +25,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "3DPrintMeApp/TabDataClass.h"
-            timestampString = "533569491.555286"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "heightValue"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[TabDataClass heightValue]"
-                  moduleName = "3DPrintMeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/LELELELELEL/FinalApp/3DPrintMeApp/3DPrintMeApp/TabDataClass.h"
-                  timestampString = "533569491.769424"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[TabDataClass setHeightValue:]"
-                  moduleName = "3DPrintMeApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/LELELELELEL/FinalApp/3DPrintMeApp/3DPrintMeApp/TabDataClass.h"
-                  timestampString = "533569491.773663"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "3DPrintMeApp/topNavigationBar.m"
             timestampString = "533822388.237051"
             startingColumnNumber = "9223372036854775807"

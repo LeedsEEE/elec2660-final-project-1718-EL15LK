@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TabDataClass : NSObject                          //Tutorial used from Dr Evans Blog (eencae.wordpress.com/ios-tutorials)
+//Tutorial used from Dr Evans Blog (eencae.wordpress.com/ios-tutorials)
 
+@interface TabDataClass : NSObject
 @property float lengthValue;
 @property float widthValue;
 @property float heightValue;

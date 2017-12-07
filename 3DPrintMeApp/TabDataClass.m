@@ -8,7 +8,9 @@
 
 #import "TabDataClass.h"
 
-@implementation TabDataClass                               //Tutorial used from Dr Evans Blog (eencae.wordpress.com/ios-tutorials)
+//Tutorial used from Dr Evans Blog (eencae.wordpress.com/ios-tutorials)
+
+@implementation TabDataClass
 @synthesize lengthValue = _lengthValue;
 @synthesize widthValue = _widthValue;
 @synthesize heightValue = _heightValue;

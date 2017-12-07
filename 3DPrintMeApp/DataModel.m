@@ -137,92 +137,210 @@
         [self.materials addObject:TPU];     //index 4
         [self.materials addObject:PC];      //index 5
         [self.materials addObject:ASA];     //index 6
-        
-#pragma mark examples data model
-        
-        self.examples = [NSMutableArray array];
-        
-        ExampleModel *treetop = [[ExampleModel alloc] init];
-        treetop.name = @"Tree Topper";
-        treetop.length = 234;
-        treetop.width = 234;
-        treetop.height = 234;
-        treetop.volume = 234;
-        treetop.stllink = @"Treetop";
-        
-        ExampleModel *marvin = [[ExampleModel alloc] init];
-        marvin.name = @"Marvin";
-        marvin.length = 234;
-        marvin.width = 234;
-        marvin.height = 234;
-        marvin.volume = 234;
-        marvin.stllink = @"Marvin";
-        
-        ExampleModel *stand = [[ExampleModel alloc] init];
-        stand.name = @"Fossil Charging Stand";
-        stand.length = 234;
-        stand.width = 234;
-        stand.height = 234;
-        stand.volume = 234;
-        stand.stllink = @"stand";
-        
-        ExampleModel *spanner = [[ExampleModel alloc] init];
-        spanner.name = @"Spanner";
-        spanner.length = 234;
-        spanner.width = 234;
-        spanner.height = 234;
-        spanner.volume = 234;
-        spanner.stllink = @"spanner";
-        
-        ExampleModel *fox = [[ExampleModel alloc] init];
-        fox.name = @"Low Poly Fox";
-        fox.length = 234;
-        fox.width = 234;
-        fox.height = 234;
-        fox.volume = 234;
-        fox.stllink = @"fox";
-        
-        [self.examples addObject:treetop];
-        [self.examples addObject:marvin];
-        [self.examples addObject:stand];
-        [self.examples addObject:spanner];
-        [self.examples addObject:fox];
-        
 
 #pragma mark hubs data model
-       
-        self.hubs = [NSMutableArray array];
         
+        self.hubs = [NSMutableArray array];
+       
         Hub *Printhublondon = [[Hub alloc] init];
         Printhublondon.name = @"Printhub London";
         Printhublondon.city = @"London";
-        Printhublondon.county = @" ";
-        Printhublondon.country = @"";
-        Printhublondon.referenceID = 1;
-        Printhublondon.longitude = 53.806682;
-        Printhublondon.latitude = -1.555033;
+        Printhublondon.county = @"London";
+        Printhublondon.country = @"United Kingdom";
+        Printhublondon.longitude = 51.5074;
+        Printhublondon.latitude = 0.1278;
         
         Hub *LaMa1 = [[Hub alloc] init];
         LaMa1.name = @"LaMa 3D";
         LaMa1.city = @"Leeds";
-        LaMa1.county = @" ";
-        LaMa1.country = @"";
-        LaMa1.referenceID = 2;
+        LaMa1.county = @"West Yorkshire";
+        LaMa1.country = @"United Kingdom";
         LaMa1.longitude = 53.815596;
         LaMa1.latitude = -1.556771;
         
         Hub *LaMa2 = [[Hub alloc] init];
         LaMa2.name = @"LaMa 3D";
         LaMa2.city = @"Wakefield";
-        LaMa2.county = @" ";
-        LaMa2.country = @"";
-        LaMa2.referenceID = 3;
+        LaMa2.county = @"West Yorkshire";
+        LaMa2.country = @"United Kingdom";
         LaMa2.longitude = 53.691059;
         LaMa2.latitude = -1.503924;
         
-        [self.hubs addObject:Printhublondon];       //index 0
+        Hub *threeDPworld = [[Hub alloc] init];
+        threeDPworld.name = @"3D Print World";
+        threeDPworld.city = @"Aylesbury";
+        threeDPworld.county = @"Buckinghamshire";
+        threeDPworld.country = @"United Kingdom";
+        threeDPworld.longitude = 51.8156;
+        threeDPworld.latitude = -0.8084;
+        
+        Hub *cncvac= [[Hub alloc] init];
+        cncvac.name = @"CNCvac";
+        cncvac.city = @"Borehamwood";
+        cncvac.county = @"Hertfordshire";
+        cncvac.country = @"United Kingdom";
+        cncvac.longitude = 51.6577;
+        cncvac.latitude = 0.2723;
+        
+        Hub *technoid= [[Hub alloc] init];
+        technoid.name = @"Technoid";
+        technoid.city = @"Harrow";
+        technoid.county = @"Greater London";
+        technoid.country = @"United Kingdom";
+        technoid.longitude = 51.5806;
+        technoid.latitude = -0.342;
+        
+        Hub *roger= [[Hub alloc] init];
+        roger.name = @"Roger";
+        roger.city = @"High Wycombe";
+        roger.county = @"Buckinghamshire";
+        roger.country = @"United Kingdom";
+        roger.longitude = 51.6286;
+        roger.latitude = -0.7482;
+        
+        Hub *admg= [[Hub alloc] init];
+        admg.name = @"admg Consulting";
+        admg.city = @"Reading";
+        admg.county = @"Berkshire";
+        admg.country = @"United Kingdom";
+        admg.longitude = 51.4543;
+        admg.latitude = -0.9781;
+        
+        Hub *hubcrash= [[Hub alloc] init];
+        hubcrash.name = @"Crash 3D";
+        hubcrash.city = @"Surbiton";
+        hubcrash.county = @"Greater London";
+        hubcrash.country = @"United Kingdom";
+        hubcrash.longitude = 51.394;
+        hubcrash.latitude = 0.3027;
+        
+        Hub *zaxis= [[Hub alloc] init];
+        zaxis.name = @"Z-Axis";
+        zaxis.city = @"Walton-on-Thames";
+        zaxis.county = @"Surrey";
+        zaxis.country = @"United Kingdom";
+        zaxis.longitude = 51.3885;
+        zaxis.latitude = -0.417;
+        
+        Hub *herts= [[Hub alloc] init];
+        herts.name = @"Herts 3D";
+        herts.city = @"Watford";
+        herts.county = @"Hertfordshire";
+        herts.country = @"United Kingdom";
+        herts.longitude = 51.6565;
+        herts.latitude = -0.3903;
+        
+        Hub *ozoid= [[Hub alloc] init];
+        ozoid.name = @"Ozoid";
+        ozoid.city = @"Weybridge";
+        ozoid.county = @"Surrey";
+        ozoid.country = @"United Kingdom";
+        ozoid.longitude = 51.3716;
+        ozoid.latitude = -0.4579;
+        
+        Hub *ptp= [[Hub alloc] init];
+        ptp.name = @"PTP Prototyping";
+        ptp.city = @"Woking";
+        ptp.county = @"Surrey";
+        ptp.country = @"United Kingdom";
+        ptp.longitude = 51.3168;
+        ptp.latitude = -0.56;
+        
+        Hub *sean= [[Hub alloc] init];
+        sean.name = @"Sean";
+        sean.city = @"Bassingbourn";
+        sean.county = @"Cambridgeshire";
+        sean.country = @"United Kingdom";
+        sean.longitude = 52.0798;
+        sean.latitude = 0.0539;
+        
+        Hub *bath= [[Hub alloc] init];
+        bath.name = @"Bath 3D";
+        bath.city = @"Bassingbourn";
+        bath.county = @"Somerset";
+        bath.country = @"United Kingdom";
+        bath.longitude = 51.3758;
+        bath.latitude = -2.3599;
+        
+        Hub *keymedia= [[Hub alloc] init];
+        keymedia.name = @"Keymedia";
+        keymedia.city = @"Brighton";
+        keymedia.county = @"East Sussex";
+        keymedia.country = @"United Kingdom";
+        keymedia.longitude = 50.8225;
+        keymedia.latitude = -0.1372;
+        
+        Hub *b3dp= [[Hub alloc] init];
+        b3dp.name = @"Bristol 3D Print";
+        b3dp.city = @"Bristol";
+        b3dp.county = @"Bristol";
+        b3dp.country = @"United Kingdom";
+        b3dp.longitude = 51.4545;
+        b3dp.latitude = -2.5879;
+        
+        Hub *aidan= [[Hub alloc] init];
+        aidan.name = @"Aidan";
+        aidan.city = @"Cambridge";
+        aidan.county = @"Cambridgeshire";
+        aidan.country = @"United Kingdom";
+        aidan.longitude = 52.2053;
+        aidan.latitude = 0.1218;
+        
+        Hub *migprops= [[Hub alloc] init];
+        migprops.name = @"Miguelprops";
+        migprops.city = @"Caterham";
+        migprops.county = @"Surrey";
+        migprops.country = @"United Kingdom";
+        migprops.longitude = 51.2803;
+        migprops.latitude = 0.0816;
+        
+        Hub *pr3d= [[Hub alloc] init];
+        pr3d.name = @"Print3D";
+        pr3d.city = @"Chelmsford";
+        pr3d.county = @"Essex";
+        pr3d.country = @"United Kingdom";
+        pr3d.longitude = 51.7356;
+        pr3d.latitude = 0.4685;
+        
+        Hub *thbul= [[Hub alloc] init];
+        thbul.name = @"ThatBulgarian";
+        thbul.city = @"Croydon";
+        thbul.county = @"Greater London";
+        thbul.country = @"United Kingdom";
+        thbul.longitude = 51.3762;
+        thbul.latitude = 0.0982;
+        
+        Hub *threedprintz= [[Hub alloc] init];
+        threedprintz.name = @"3DPrintz";
+        threedprintz.city = @"Dunstable";
+        threedprintz.county = @"Bedfordshire";
+        threedprintz.country = @"United Kingdom";
+        threedprintz.longitude = 51.8856;
+        threedprintz.latitude = -0.5204;
+        
+        
+        [self.hubs addObject:Printhublondon];       
         [self.hubs addObject:LaMa1];
         [self.hubs addObject:LaMa2];
+        [self.hubs addObject:threeDPworld];
+        [self.hubs addObject:cncvac];
+        [self.hubs addObject:technoid];
+        [self.hubs addObject:roger];
+        [self.hubs addObject:admg];
+        [self.hubs addObject:hubcrash];
+        [self.hubs addObject:zaxis];
+        [self.hubs addObject:herts];
+        [self.hubs addObject:ozoid];
+        [self.hubs addObject:ptp];
+        [self.hubs addObject:sean];
+        [self.hubs addObject:bath];
+        [self.hubs addObject:keymedia];
+        [self.hubs addObject:b3dp];
+        [self.hubs addObject:aidan];
+        [self.hubs addObject:migprops];
+        [self.hubs addObject:pr3d];
+        [self.hubs addObject:thbul];
+        [self.hubs addObject:threedprintz];
     
     }
     return self;

@@ -19,16 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Dimensions is selected by default.
     self.volumeField.hidden = true;
     self.volumeLabel.hidden = true;
     
-    self.lengthField.keyboardType = UIKeyboardTypeDecimalPad;           //set keyboard types to decimal pad. Information from stackoverflow.com/questions/2079987
-    self.widthField.keyboardType = UIKeyboardTypeDecimalPad;
-    self.heightField.keyboardType = UIKeyboardTypeDecimalPad;
-    self.volumeField.keyboardType = UIKeyboardTypeDecimalPad;
+    [self setkeyboards];
     
     self.data = [TabDataClass sharedInstance];                          //create shared instance of the tab data class
+    
     [self.data setInputType:@"Dimensions"];                             //initialize different properties to prevent eccentric behaviour of the application in other tabs
     [self.data setLengthValue: 0];
     [self.data setWidthValue: 0];
@@ -38,20 +37,9 @@
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 
 - (IBAction)selectControl:(id)sender {
     
@@ -149,6 +137,7 @@
 
 - (void)valueChecker:(UITextField*)field {                                                                             // method to check fields for maximum values
     
+    //alert code from apple documentation
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Oops!"
                                                                    message:@"It looks like you might have entered a value too large!"
                                                             preferredStyle:UIAlertControllerStyleAlert];
@@ -157,6 +146,16 @@
                                                           handler:^(UIAlertAction * action) {[field becomeFirstResponder];}];
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+- (void) setkeyboards{
+    
+    //set keyboard types to decimal pad. Information from stackoverflow.com/questions/2079987
+    self.lengthField.keyboardType = UIKeyboardTypeDecimalPad;
+    self.widthField.keyboardType = UIKeyboardTypeDecimalPad;
+    self.heightField.keyboardType = UIKeyboardTypeDecimalPad;
+    self.volumeField.keyboardType = UIKeyboardTypeDecimalPad;
     
 }
 

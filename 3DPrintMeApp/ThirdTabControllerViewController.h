@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) TabDataClass *data;
 
+//dynamic labels
 @property (weak, nonatomic) IBOutlet UILabel *typeinputLabel;
 @property (weak, nonatomic) IBOutlet UILabel *actualinputLabel;
 @property (weak, nonatomic) IBOutlet UILabel *calcVolumeLabel;

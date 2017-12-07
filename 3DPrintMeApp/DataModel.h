@@ -7,16 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "process.h"                                                         //import process and material classes
+#import "process.h"                                                         //import process, material and hub classes
 #import "material.h"
 #import "hub.h"
-#import "ExampleModel.h"
 
 @interface DataModel : NSObject
 
 @property (strong,nonatomic) NSMutableArray *processes;                     //create two mutable arrays (one for processes and one for materials)
 @property (strong,nonatomic) NSMutableArray *materials;
 @property (strong,nonatomic) NSMutableArray *hubs;
-@property (strong,nonatomic) NSMutableArray *examples;
 
 @end

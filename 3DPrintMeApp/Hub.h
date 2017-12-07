@@ -16,6 +16,5 @@
 @property (strong,nonatomic) NSString *country;
 @property float longitude;
 @property float latitude;
-@property int referenceID;
 
 @end

@@ -13,18 +13,20 @@
 
 @property (strong, nonatomic) TabDataClass *data;
 
+//segment  control
 @property (weak, nonatomic) IBOutlet UISegmentedControl *selectionController;
 
+//labels for different parameters
 @property (weak, nonatomic) IBOutlet UILabel *lengthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *widthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *heightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *volumeLabel;
 
+//different text fields
 @property (weak, nonatomic) IBOutlet UITextField *lengthField;
 @property (weak, nonatomic) IBOutlet UITextField *widthField;
 @property (weak, nonatomic) IBOutlet UITextField *heightField;
 @property (weak, nonatomic) IBOutlet UITextField *volumeField;
-
 
 
 - (IBAction)selectControl:(id)sender;

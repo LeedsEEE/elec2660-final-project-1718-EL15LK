@@ -13,10 +13,10 @@
 {
     NSArray *choices;       //'choices' from tab 2
     NSString *typeInput;    //input type
-    bool emptyInput;
-    bool smallPrint;
-    int reasoningCode;
-    float calculatedVolume;
+    bool emptyInput;        //boolean variable to sense empty input
+    bool smallPrint;        //boolean variable to sense small print
+    int reasoningCode;      //int variable for reasoning code
+    float calculatedVolume; //float for calculating volume
 }
 
 @end
@@ -25,7 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     //Choices are predetermined, hence they will be stored in an array as strings
     choices = @[@"Fun Print",@"Aesthetics",@"Visual Prototype",@"Functional Prototype",@"Final Product"];
@@ -35,6 +34,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
+    
     self.data = [TabDataClass sharedInstance];                      // create shared instance of tab data class
     
     [self userInputParameters];
@@ -50,9 +50,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+//method to assign reasoningcode
 - (void) labelManipulation{
     
+    //ensure input is not empty
     if (emptyInput == false) {
         
         self.processLabel.hidden = false;
@@ -102,6 +103,8 @@
     
     }   else    {
         
+        //hide labels if input is empty
+        
         self.processLabel.hidden = true;
         self.elaboratedReasoning.hidden = true;
         self.costLabel.hidden = true;
@@ -113,6 +116,7 @@
     
 }
 
+//method to display labels that have a default value
 - (void) inputItemsManipulation{
     
     
@@ -152,7 +156,8 @@
     
 }
 
-- (void) userInputParameters{                                                               //Method to understand user inputs
+//method to check the user-enterable data fields (non-default valued fields)
+- (void) userInputParameters{
     
     if ([self.data.inputType isEqualToString:@"Dimensions"]) {
         
@@ -166,7 +171,7 @@
             
             emptyInput = false;
             
-            if (self.data.lengthValue <= 150 || self.data.widthValue <= 150 || self.data.heightValue == 0){
+            if (self.data.lengthValue <= 150 && self.data.widthValue <= 150 && self.data.heightValue == 0){
                 
                 smallPrint = true;
                 
@@ -203,6 +208,7 @@
     }
 }
 
+//method to set process and reasoning text according to the reasoning code
 - (void) setReasoningText {
     
     switch (reasoningCode) {
@@ -281,6 +287,7 @@
 
 }
 
+//method to output a cost price for the appropriate suggested process
 - (void) costManipulation {
     
     float costprice;

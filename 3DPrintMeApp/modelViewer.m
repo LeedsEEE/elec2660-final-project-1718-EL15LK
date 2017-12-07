@@ -7,9 +7,9 @@
 //
 
 #import "modelViewer.h"
-#import "HxSTLParser.h"
-#import <SceneKit/SceneKit.h>
-#import "AppConstants.h"
+#import "HxSTLParser.h"                             //import parser header to allow parsing of stl to scn Reference: https://github.com/victorgama/HxSTLParser
+#import <SceneKit/SceneKit.h>                       //import scenekit framework to allow scnview
+#import "AppConstants.h"                            //import app constants header
 
 @interface modelViewer ()
 
@@ -19,44 +19,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self loadStl:(self.example.stllink)];
-    
+
+    //set border around the SCNView
     self.actualScene.layer.masksToBounds = true;
     self.actualScene.layer.borderColor = [navbarColor CGColor];
     self.actualScene.layer.borderWidth = 2.0;
     self.actualScene.layer.cornerRadius = 5.0;
     
+    //set header logo
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     
-    self.nameLabel.text = self.example.name;
-    self.dimensionsLabel.text = [NSString stringWithFormat:@"Length: %.2f, Width: %.2f, Height: %.2f", self.example.length, self.example.width, self.example.height];
-    self.volumeLabel.text = [NSString stringWithFormat:@"Volume: %.2f", self.example.volume];
-    
+    //call stl method
+    [self loadStl];
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
-- (void)loadStl: (NSString *)modelpath {
+- (void)loadStl{
     
-    
+    //method to use the feature from github
     STLParser *parser = [[STLParser alloc] init];
     NSError *error = nil;
-    NSString *fileContents = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:modelpath ofType:@"stl"] encoding:NSASCIIStringEncoding error:nil];
+    NSString *fileContents = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"iPhoneMoney" ofType:@"stl"] encoding:NSASCIIStringEncoding error:nil];
     SCNNode *node = [parser loadFromString:fileContents error:&error];
     if(error != nil) {
         NSLog(@"Something went wrong: %@", error);
         return;
     }
     SCNScene *scene = [[SCNScene alloc] init];
+
+    //scene setup
     self.actualScene.autoenablesDefaultLighting = true;
     self.actualScene.backgroundColor = baseColor;
+    
+    
     [scene.rootNode addChildNode:node];
     
+    //assign scene to output the nodes
     self.actualScene.scene = scene;
 }
 

@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) TabDataClass *data;
 
+//picker view
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerReason;
 
 

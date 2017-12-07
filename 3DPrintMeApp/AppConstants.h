@@ -13,7 +13,7 @@
 
 #pragma mark Images
 
-#define TitleLogo @"TopBar.png"
+#define TitleLogo @"TopBar.png"                                     //Title / Header logo
 
 
 #pragma mark Colors
@@ -33,8 +33,42 @@
 
 // REFERENCES
 
-// FDM and SLA image from website: http://apm-designs.com/fdm-vs-sla-3d-printer-tech-comparison
-// original SLS image By Materialgeeza - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4032088 . Modified for consistency.
-// Adding borders / curved edges from: https://stackoverflow.com/questions/34984966
-// Modifying section headers from: https://stackoverflow.com/questions/19802336
+// Coordinates for Leeds: 53.806682 & -1.555033
+
+/* STL Reference
+ * iPhoneMoney Clip: https://www.thingiverse.com/thing:215687
+ * Parameters were found by me using Slic3r software
+ */
+
+/* Image References
+ * FDM and SLA Images from: http://apm-designs.com/fdm-vs-sla-3d-printer-tech-comparison
+ * Original SLS Image by: Materialgeeza - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4032088 Modified on paint for consistency.
+ * Material Images from: https://all3dp.com/1/3d-printer-filament-types-3d-printing-3d-filament/
+ */
+
+/* Code References
+ * Technique of having appconstants.h, assigning header logo and defining color from hex is from an example on https://github.com/Jawbone/JBChartView
+ * Adding borders / curved edges to imageview elements from: https://stackoverflow.com/questions/34984966 Modified similarly for sceneview.
+ * Modifying section headers from: https://stackoverflow.com/questions/19802336
+ * Header title setup: https://stackoverflow.com/questions/10505708/how-to-set-the-uitableview-section-title-programmatically-iphone-ipad
+ * Keyboard type to decimal: stackoverflow.com/questions/2079987
+ * UIAlert code: Apple Documentation
+ * Sending data from one tab to another: Dr Craig Evans Blog
+ * UIKit: Apple Documentation
+ */
+
+/* Stl to SCN Parsing
+ * The parser headers are from https://github.com/victorgama/HxSTLParser. This allowed me to use stl files instead of setting up custom scene files in xcode.
+ * Scene setup from apple documentation
+ */
+
+/* Information references
+ * Information on processes: www.sculpteo.com
+ * Information on materials from: www.3dhubs.com & all3dp.com
+ */
+
+/* Other references
+ * Cost price of processes from 3Dhubs.com (I uploaded a test file and obtained a few quotes, I then averaged the quotes and manipulated it to be per cm3)
+ */
+
 
