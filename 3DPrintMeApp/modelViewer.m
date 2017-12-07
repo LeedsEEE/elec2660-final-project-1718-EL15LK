@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadStl];
+    [self loadStl:(self.example.stllink)];
     
     self.actualScene.layer.masksToBounds = true;
     self.actualScene.layer.borderColor = [navbarColor CGColor];
@@ -29,6 +29,11 @@
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TitleLogo]];
     
+    self.nameLabel.text = self.example.name;
+    self.dimensionsLabel.text = [NSString stringWithFormat:@"Length: %.2f, Width: %.2f, Height: %.2f", self.example.length, self.example.width, self.example.height];
+    self.volumeLabel.text = [NSString stringWithFormat:@"Volume: %.2f", self.example.volume];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,12 +41,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)loadStl {
+- (void)loadStl: (NSString *)modelpath {
     
     
     STLParser *parser = [[STLParser alloc] init];
     NSError *error = nil;
-    NSString *fileContents = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3dObject" ofType:@"stl"] encoding:NSASCIIStringEncoding error:nil];
+    NSString *fileContents = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:modelpath ofType:@"stl"] encoding:NSASCIIStringEncoding error:nil];
     SCNNode *node = [parser loadFromString:fileContents error:&error];
     if(error != nil) {
         NSLog(@"Something went wrong: %@", error);
