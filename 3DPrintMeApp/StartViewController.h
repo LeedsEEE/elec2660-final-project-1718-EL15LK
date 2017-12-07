@@ -11,6 +11,4 @@
 
 @interface StartViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet SCNView *SCNScene;
-
 @end

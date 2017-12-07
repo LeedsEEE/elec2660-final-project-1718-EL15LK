@@ -210,10 +210,10 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-GS-as0">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" zoomEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-GS-as0">
                                 <frame key="frameInset" width="1000" height="1000"/>
                             </mapView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.01" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="i58-Ui-K3a">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.01" maxValue="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="i58-Ui-K3a">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="b1q-P8-2yU"/>
                                 </constraints>
@@ -236,13 +236,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a6q-GS-as0" firstAttribute="bottom" secondItem="FwZ-M1-CsG" secondAttribute="top" id="8TO-lU-DDI"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="KHI-60-piZ" secondAttribute="leading" id="EXR-lw-E1g"/>
+                            <constraint firstItem="KHI-60-piZ" firstAttribute="top" secondItem="WCI-4Y-5VY" secondAttribute="bottom" constant="10" id="K25-R1-Ze0"/>
                             <constraint firstAttribute="trailing" secondItem="a6q-GS-as0" secondAttribute="trailing" id="LUx-mf-9Jf"/>
                             <constraint firstItem="FwZ-M1-CsG" firstAttribute="top" secondItem="i58-Ui-K3a" secondAttribute="bottom" constant="10" id="MQ7-FF-gbB"/>
                             <constraint firstItem="a6q-GS-as0" firstAttribute="top" secondItem="WCI-4Y-5VY" secondAttribute="bottom" id="Or1-qd-ys6"/>
                             <constraint firstItem="a6q-GS-as0" firstAttribute="leading" secondItem="k2z-ll-2M2" secondAttribute="leading" id="QtU-cB-YDW"/>
-                            <constraint firstItem="i58-Ui-K3a" firstAttribute="top" secondItem="KHI-60-piZ" secondAttribute="bottom" id="d75-LW-Qr9"/>
                             <constraint firstItem="i58-Ui-K3a" firstAttribute="centerX" secondItem="a6q-GS-as0" secondAttribute="centerX" id="gyw-W7-8mZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KHI-60-piZ" secondAttribute="trailing" constant="10" id="z4X-jy-9Jq"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Services" image="Map" id="jtL-nr-6ax"/>
@@ -453,6 +453,39 @@
             </objects>
             <point key="canvasLocation" x="-2957" y="108"/>
         </scene>
+        <!--Model Viewer-->
+        <scene sceneID="5Fd-xJ-fLc">
+            <objects>
+                <viewController id="nr2-PF-hXg" customClass="modelViewer" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o5W-we-txg"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ab-FV-al3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QvV-nD-har">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="Chambered_Bracelet.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4n-kZ-KeI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="pl4-Kv-Mt5"/>
+                                </constraints>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58431372550000005" green="0.79215686269999996" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="W4n-kZ-KeI" firstAttribute="leading" secondItem="QvV-nD-har" secondAttribute="leadingMargin" id="KUm-LA-bgm"/>
+                            <constraint firstItem="W4n-kZ-KeI" firstAttribute="top" secondItem="o5W-we-txg" secondAttribute="bottom" constant="10" id="h9b-28-6K6"/>
+                            <constraint firstItem="W4n-kZ-KeI" firstAttribute="centerX" secondItem="QvV-nD-har" secondAttribute="centerX" id="qlu-ky-Hmc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actualScene" destination="W4n-kZ-KeI" id="Lyr-eE-BJQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8f6-Df-ECY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2106.4000000000001" y="-598.65067466266873"/>
+        </scene>
         <!--3D Print Me-->
         <scene sceneID="m9k-lb-uTz">
             <objects>
@@ -537,10 +570,17 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="K1O-fT-8UY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mek-bR-ake">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="nr2-PF-hXg" kind="show" id="Vqm-aM-TUD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58431372549019611" green="0.792156862745098" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="h0Z-Zu-zxB" firstAttribute="top" secondItem="aPU-3S-e84" secondAttribute="bottom" constant="25" id="07g-T1-TFc"/>
+                            <constraint firstItem="mek-bR-ake" firstAttribute="top" secondItem="h0Z-Zu-zxB" secondAttribute="bottom" constant="20" id="8Pz-D0-HXO"/>
                             <constraint firstItem="p4B-BG-DdN" firstAttribute="trailing" secondItem="Ava-pa-o87" secondAttribute="trailingMargin" id="CC2-fx-TWS"/>
                             <constraint firstItem="Stm-3k-bq3" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="HTR-Sa-zv8"/>
                             <constraint firstItem="Stm-3k-bq3" firstAttribute="top" secondItem="fIF-hi-TxB" secondAttribute="bottom" constant="25" id="KDg-ib-hSd"/>
@@ -549,6 +589,7 @@
                             <constraint firstItem="p4B-BG-DdN" firstAttribute="leading" secondItem="Ava-pa-o87" secondAttribute="leadingMargin" id="gx9-SB-vEw"/>
                             <constraint firstItem="aPU-3S-e84" firstAttribute="top" secondItem="rFK-K0-7cV" secondAttribute="bottom" constant="40" id="mCS-Fc-Sj7"/>
                             <constraint firstItem="rFK-K0-7cV" firstAttribute="top" secondItem="p4B-BG-DdN" secondAttribute="bottom" constant="25" id="oec-RQ-i71"/>
+                            <constraint firstItem="mek-bR-ake" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="oro-ev-UQH"/>
                             <constraint firstItem="aPU-3S-e84" firstAttribute="trailing" secondItem="Ava-pa-o87" secondAttribute="trailingMargin" id="rmS-Jd-jCY"/>
                             <constraint firstItem="aPU-3S-e84" firstAttribute="leading" secondItem="Ava-pa-o87" secondAttribute="leadingMargin" id="udq-Lb-gMH"/>
                             <constraint firstItem="rFK-K0-7cV" firstAttribute="centerX" secondItem="Ava-pa-o87" secondAttribute="centerX" id="zuc-y2-6sY"/>

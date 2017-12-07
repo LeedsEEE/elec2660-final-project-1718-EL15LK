@@ -138,6 +138,57 @@
         [self.materials addObject:PC];      //index 5
         [self.materials addObject:ASA];     //index 6
         
+#pragma mark examples data model
+        
+        self.examples = [NSMutableArray array];
+        
+        ExampleModel *treetop = [[ExampleModel alloc] init];
+        treetop.name = @"Tree Topper";
+        treetop.length = 234;
+        treetop.width = 234;
+        treetop.height = 234;
+        treetop.volume = 234;
+        treetop.stllink = @"Treetop";
+        
+        ExampleModel *marvin = [[ExampleModel alloc] init];
+        marvin.name = @"Marvin";
+        marvin.length = 234;
+        marvin.width = 234;
+        marvin.height = 234;
+        marvin.volume = 234;
+        marvin.stllink = @"Marvin";
+        
+        ExampleModel *stand = [[ExampleModel alloc] init];
+        stand.name = @"Fossil Charging Stand";
+        stand.length = 234;
+        stand.width = 234;
+        stand.height = 234;
+        stand.volume = 234;
+        stand.stllink = @"stand";
+        
+        ExampleModel *spanner = [[ExampleModel alloc] init];
+        spanner.name = @"Spanner";
+        spanner.length = 234;
+        spanner.width = 234;
+        spanner.height = 234;
+        spanner.volume = 234;
+        spanner.stllink = @"spanner";
+        
+        ExampleModel *fox = [[ExampleModel alloc] init];
+        fox.name = @"Low Poly Fox";
+        fox.length = 234;
+        fox.width = 234;
+        fox.height = 234;
+        fox.volume = 234;
+        fox.stllink = @"fox";
+        
+        [self.examples addObject:treetop];
+        [self.examples addObject:marvin];
+        [self.examples addObject:stand];
+        [self.examples addObject:spanner];
+        [self.examples addObject:fox];
+        
+
 #pragma mark hubs data model
        
         self.hubs = [NSMutableArray array];

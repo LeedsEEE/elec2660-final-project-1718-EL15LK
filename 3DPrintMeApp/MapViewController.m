@@ -82,8 +82,8 @@
         
         annotation.title = tempHub.name;
         annotation.coordinate = cords;
+        annotation.subtitle = [NSString stringWithFormat:@"%@,%@",tempHub.city,tempHub.county];
         
-        NSLog(@"MARKERS");
         NSLog(@"%i", loopcount);
         
         

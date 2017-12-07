@@ -17,6 +17,7 @@
 		A031A4111FD6AD04003842A5 /* TopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A031A4101FD6AD04003842A5 /* TopBar.png */; };
 		A033421F1FD6CBB8003E6F97 /* TabController.m in Sources */ = {isa = PBXBuildFile; fileRef = A033421E1FD6CBB8003E6F97 /* TabController.m */; };
 		A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */; };
+		A058F3441FD96EC300BD4FAA /* ExampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A058F3431FD96EC300BD4FAA /* ExampleModel.m */; };
 		A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A08581F31FD1577A00781E53 /* SLS_printing.jpg */; };
 		A08582071FD1790200781E53 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08582061FD1790200781E53 /* StartViewController.m */; };
 		A085C8EB1FC73AA300041D5B /* material.m in Sources */ = {isa = PBXBuildFile; fileRef = A085C8EA1FC73AA300041D5B /* material.m */; };
@@ -30,9 +31,7 @@
 		A09DF8C71FBB1A2800705C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */; };
 		A09DF8D21FBB1A2900705C3A /* _DPrintMeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8D11FBB1A2900705C3A /* _DPrintMeAppTests.m */; };
 		A09DF8DD1FBB1A2A00705C3A /* _DPrintMeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */; };
-		A0AA4D071FD5B43900280FBD /* testObject.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AA4D061FD5B43900280FBD /* testObject.scn */; };
 		A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AAC6EF1FD5915F00152110 /* STLParser.m */; };
-		A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */; };
 		A0ACEE811FD85FBF0083921B /* Material_ABS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7A1FD85FBF0083921B /* Material_ABS.jpg */; };
 		A0ACEE821FD85FBF0083921B /* Material_ASA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7B1FD85FBF0083921B /* Material_ASA.jpg */; };
 		A0ACEE831FD85FBF0083921B /* Material_Nylon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0ACEE7C1FD85FBF0083921B /* Material_Nylon.jpg */; };
@@ -46,6 +45,8 @@
 		A0C79AFB1FC44C4B00379BE5 /* process.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AFA1FC44C4B00379BE5 /* process.m */; };
 		A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AFD1FC459D800379BE5 /* DataModel.m */; };
 		A0D28A481FD93FE00086737E /* Hub.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D28A471FD93FE00086737E /* Hub.m */; };
+		A0D28A4E1FD95B800086737E /* modelViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D28A4D1FD95B800086737E /* modelViewer.m */; };
+		A0D28A531FD963940086737E /* 3dObject.stl in Resources */ = {isa = PBXBuildFile; fileRef = A0D28A521FD963940086737E /* 3dObject.stl */; };
 		A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331601FD0154700361E11 /* FDM_printing.png */; };
 		A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331611FD0154A00361E11 /* SLA_printing.png */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,8 @@
 		A033421E1FD6CBB8003E6F97 /* TabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabController.m; sourceTree = "<group>"; };
 		A03AD3DD1FC85B78009F1269 /* MaterialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialDetailViewController.h; sourceTree = "<group>"; };
 		A03AD3DE1FC85B78009F1269 /* MaterialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialDetailViewController.m; sourceTree = "<group>"; };
+		A058F3421FD96EC300BD4FAA /* ExampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleModel.h; sourceTree = "<group>"; };
+		A058F3431FD96EC300BD4FAA /* ExampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleModel.m; sourceTree = "<group>"; };
 		A08581F31FD1577A00781E53 /* SLS_printing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SLS_printing.jpg; sourceTree = "<group>"; };
 		A08582051FD1790200781E53 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		A08582061FD1790200781E53 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
@@ -107,12 +110,9 @@
 		A09DF8D81FBB1A2A00705C3A /* 3DPrintMeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DPrintMeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09DF8DC1FBB1A2A00705C3A /* _DPrintMeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DPrintMeAppUITests.m; sourceTree = "<group>"; };
 		A09DF8DE1FBB1A2A00705C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0AA4D061FD5B43900280FBD /* testObject.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = testObject.scn; path = ../testObject.scn; sourceTree = "<group>"; };
-		A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chambered_Bracelet.stl; sourceTree = "<group>"; };
 		A0AAC6ED1FD5914600152110 /* HxSTLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HxSTLParser.h; sourceTree = "<group>"; };
 		A0AAC6EE1FD5915F00152110 /* STLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLParser.h; sourceTree = "<group>"; };
 		A0AAC6EF1FD5915F00152110 /* STLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLParser.m; sourceTree = "<group>"; };
-		A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		A0ACEE7A1FD85FBF0083921B /* Material_ABS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_ABS.jpg; sourceTree = "<group>"; };
 		A0ACEE7B1FD85FBF0083921B /* Material_ASA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_ASA.jpg; sourceTree = "<group>"; };
 		A0ACEE7C1FD85FBF0083921B /* Material_Nylon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Material_Nylon.jpg; sourceTree = "<group>"; };
@@ -132,6 +132,9 @@
 		A0C79AFD1FC459D800379BE5 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		A0D28A461FD93FE00086737E /* Hub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hub.h; sourceTree = "<group>"; };
 		A0D28A471FD93FE00086737E /* Hub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hub.m; sourceTree = "<group>"; };
+		A0D28A4C1FD95B800086737E /* modelViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelViewer.h; sourceTree = "<group>"; };
+		A0D28A4D1FD95B800086737E /* modelViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modelViewer.m; sourceTree = "<group>"; };
+		A0D28A521FD963940086737E /* 3dObject.stl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3dObject.stl; sourceTree = "<group>"; };
 		A0F331601FD0154700361E11 /* FDM_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FDM_printing.png; sourceTree = "<group>"; };
 		A0F331611FD0154A00361E11 /* SLA_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SLA_printing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +179,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A058F3401FD969AC00BD4FAA /* 3D Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				A0AAC6EE1FD5915F00152110 /* STLParser.h */,
+				A0AAC6EF1FD5915F00152110 /* STLParser.m */,
+				A0AAC6ED1FD5914600152110 /* HxSTLParser.h */,
+				A0D28A4C1FD95B800086737E /* modelViewer.h */,
+				A0D28A4D1FD95B800086737E /* modelViewer.m */,
+			);
+			name = "3D Viewer";
+			sourceTree = "<group>";
+		};
+		A058F3411FD96E8C00BD4FAA /* STL Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "STL Files";
+			sourceTree = "<group>";
+		};
 		A085C8ED1FC73AD500041D5B /* Data Model Related */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +211,8 @@
 				A029A3521FCD72A600DF6AA5 /* TabDataClass.m */,
 				A0D28A461FD93FE00086737E /* Hub.h */,
 				A0D28A471FD93FE00086737E /* Hub.m */,
+				A058F3421FD96EC300BD4FAA /* ExampleModel.h */,
+				A058F3431FD96EC300BD4FAA /* ExampleModel.m */,
 			);
 			name = "Data Model Related";
 			sourceTree = "<group>";
@@ -196,9 +220,10 @@
 		A085C8EE1FC73B0500041D5B /* Multimedia Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A058F3411FD96E8C00BD4FAA /* STL Files */,
+				A0D28A521FD963940086737E /* 3dObject.stl */,
 				A0ACEE791FD85F470083921B /* Material Images */,
 				A0ACEE781FD85F2D0083921B /* Other Images */,
-				A0ACEE771FD85F160083921B /* Scene Files */,
 				A08C057D1FD1C6C50094BFD2 /* Process Images */,
 			);
 			name = "Multimedia Resources";
@@ -209,8 +234,6 @@
 			children = (
 				A09DF8C51FBB1A2800705C3A /* LaunchScreen.storyboard */,
 				A09DF8C01FBB1A2800705C3A /* Main.storyboard */,
-				A08582051FD1790200781E53 /* StartViewController.h */,
-				A08582061FD1790200781E53 /* StartViewController.m */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -279,10 +302,10 @@
 		A09DF8B31FBB1A2700705C3A /* 3DPrintMeApp */ = {
 			isa = PBXGroup;
 			children = (
-				A0AAC6EE1FD5915F00152110 /* STLParser.h */,
-				A0AAC6EF1FD5915F00152110 /* STLParser.m */,
-				A0AAC6ED1FD5914600152110 /* HxSTLParser.h */,
 				A085820B1FD17A1B00781E53 /* AppConstants.h */,
+				A08582051FD1790200781E53 /* StartViewController.h */,
+				A08582061FD1790200781E53 /* StartViewController.m */,
+				A058F3401FD969AC00BD4FAA /* 3D Viewer */,
 				A085C8F11FC73B5700041D5B /* Learning Centre View Controllers */,
 				A085C8F01FC73B3C00041D5B /* Tab View Controllers */,
 				A085C8EF1FC73B1D00041D5B /* Storyboards */,
@@ -321,16 +344,6 @@
 				A09DF8DE1FBB1A2A00705C3A /* Info.plist */,
 			);
 			path = 3DPrintMeAppUITests;
-			sourceTree = "<group>";
-		};
-		A0ACEE771FD85F160083921B /* Scene Files */ = {
-			isa = PBXGroup;
-			children = (
-				A0AA4D081FD5B48200280FBD /* Chambered_Bracelet.stl */,
-				A0AAC6F11FD5971100152110 /* SceneKit Scene.scn */,
-				A0AA4D061FD5B43900280FBD /* testObject.scn */,
-			);
-			name = "Scene Files";
 			sourceTree = "<group>";
 		};
 		A0ACEE781FD85F2D0083921B /* Other Images */ = {
@@ -472,13 +485,12 @@
 				A09DF8C41FBB1A2800705C3A /* Assets.xcassets in Resources */,
 				A0ACEE841FD85FBF0083921B /* Material_PC.jpg in Resources */,
 				A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */,
-				A0AA4D071FD5B43900280FBD /* testObject.scn in Resources */,
 				A09DF8C21FBB1A2800705C3A /* Main.storyboard in Resources */,
 				A0ACEE871FD85FBF0083921B /* Material_TPU.jpg in Resources */,
 				A0ACEE821FD85FBF0083921B /* Material_ASA.jpg in Resources */,
 				A08581F41FD1577A00781E53 /* SLS_printing.jpg in Resources */,
+				A0D28A531FD963940086737E /* 3dObject.stl in Resources */,
 				A0ACEE831FD85FBF0083921B /* Material_Nylon.jpg in Resources */,
-				A0AAC6F21FD5971100152110 /* SceneKit Scene.scn in Resources */,
 				A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */,
 				A031A4111FD6AD04003842A5 /* TopBar.png in Resources */,
 				A0ACEE851FD85FBF0083921B /* Material_PETG.jpg in Resources */,
@@ -509,6 +521,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A085C8EB1FC73AA300041D5B /* material.m in Sources */,
+				A0D28A4E1FD95B800086737E /* modelViewer.m in Sources */,
+				A058F3441FD96EC300BD4FAA /* ExampleModel.m in Sources */,
 				A0085D3C1FC751560002C579 /* FirstTabViewController.m in Sources */,
 				A0AAC6F01FD5915F00152110 /* STLParser.m in Sources */,
 				A09DF8BF1FBB1A2800705C3A /* SecondViewController.m in Sources */,

@@ -28,24 +28,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-/* - (void)loadStl {                                           //this is for using the parser
-    STLParser *parser = [[STLParser alloc] init];
-    NSError *error = nil;
-    NSString *fileContents = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3dObject" ofType:@"stl"] encoding:NSASCIIStringEncoding error:nil];
-    SCNNode *node = [parser loadFromString:fileContents error:&error];
-    if(error != nil) {
-        NSLog(@"Something went wrong: %@", error);
-        return;
-    }
-    SCNScene *scene = [[SCNScene alloc] init];
-    // ...configure your scene
-    [scene.rootNode addChildNode:node];
-} */
-
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [super viewDidAppear:animated];
-
-    
-}
 @end
