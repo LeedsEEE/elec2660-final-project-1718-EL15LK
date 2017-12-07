@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "DataModel.h"
 
 @interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -16,6 +17,8 @@
 @property (strong, nonatomic) CLLocationManager *location;
 @property float zoomValue;
 @property (weak, nonatomic) IBOutlet UISlider *sliderPosition;
+
+@property (strong, nonatomic) DataModel *data;
 
 
 

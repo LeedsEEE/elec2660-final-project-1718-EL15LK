@@ -45,6 +45,7 @@
 		A0C79AF81FC449D600379BE5 /* ThirdTabControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AF71FC449D600379BE5 /* ThirdTabControllerViewController.m */; };
 		A0C79AFB1FC44C4B00379BE5 /* process.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AFA1FC44C4B00379BE5 /* process.m */; };
 		A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C79AFD1FC459D800379BE5 /* DataModel.m */; };
+		A0D28A481FD93FE00086737E /* Hub.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D28A471FD93FE00086737E /* Hub.m */; };
 		A0F331621FD0154A00361E11 /* FDM_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331601FD0154700361E11 /* FDM_printing.png */; };
 		A0F331631FD0154A00361E11 /* SLA_printing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F331611FD0154A00361E11 /* SLA_printing.png */; };
 /* End PBXBuildFile section */
@@ -129,6 +130,8 @@
 		A0C79AFA1FC44C4B00379BE5 /* process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = process.m; sourceTree = "<group>"; };
 		A0C79AFC1FC459D800379BE5 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		A0C79AFD1FC459D800379BE5 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		A0D28A461FD93FE00086737E /* Hub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hub.h; sourceTree = "<group>"; };
+		A0D28A471FD93FE00086737E /* Hub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hub.m; sourceTree = "<group>"; };
 		A0F331601FD0154700361E11 /* FDM_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FDM_printing.png; sourceTree = "<group>"; };
 		A0F331611FD0154A00361E11 /* SLA_printing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SLA_printing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +187,8 @@
 				A0C79AFD1FC459D800379BE5 /* DataModel.m */,
 				A029A3511FCD72A600DF6AA5 /* TabDataClass.h */,
 				A029A3521FCD72A600DF6AA5 /* TabDataClass.m */,
+				A0D28A461FD93FE00086737E /* Hub.h */,
+				A0D28A471FD93FE00086737E /* Hub.m */,
 			);
 			name = "Data Model Related";
 			sourceTree = "<group>";
@@ -511,6 +516,7 @@
 				A033421F1FD6CBB8003E6F97 /* TabController.m in Sources */,
 				A0B85D671FC469E6006ABC1E /* DetailViewController.m in Sources */,
 				A0C79AF81FC449D600379BE5 /* ThirdTabControllerViewController.m in Sources */,
+				A0D28A481FD93FE00086737E /* Hub.m in Sources */,
 				A03AD3DF1FC85B78009F1269 /* MaterialDetailViewController.m in Sources */,
 				A029A3531FCD72A600DF6AA5 /* TabDataClass.m in Sources */,
 				A0C79AFE1FC459D800379BE5 /* DataModel.m in Sources */,

@@ -138,6 +138,41 @@
         [self.materials addObject:PC];      //index 5
         [self.materials addObject:ASA];     //index 6
         
+#pragma mark hubs data model
+       
+        self.hubs = [NSMutableArray array];
+        
+        Hub *Printhublondon = [[Hub alloc] init];
+        Printhublondon.name = @"Printhub London";
+        Printhublondon.city = @"London";
+        Printhublondon.county = @" ";
+        Printhublondon.country = @"";
+        Printhublondon.referenceID = 1;
+        Printhublondon.longitude = 53.806682;
+        Printhublondon.latitude = -1.555033;
+        
+        Hub *LaMa1 = [[Hub alloc] init];
+        LaMa1.name = @"LaMa 3D";
+        LaMa1.city = @"Leeds";
+        LaMa1.county = @" ";
+        LaMa1.country = @"";
+        LaMa1.referenceID = 2;
+        LaMa1.longitude = 53.815596;
+        LaMa1.latitude = -1.556771;
+        
+        Hub *LaMa2 = [[Hub alloc] init];
+        LaMa2.name = @"LaMa 3D";
+        LaMa2.city = @"Wakefield";
+        LaMa2.county = @" ";
+        LaMa2.country = @"";
+        LaMa2.referenceID = 3;
+        LaMa2.longitude = 53.691059;
+        LaMa2.latitude = -1.503924;
+        
+        [self.hubs addObject:Printhublondon];       //index 0
+        [self.hubs addObject:LaMa1];
+        [self.hubs addObject:LaMa2];
+    
     }
     return self;
 }

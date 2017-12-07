@@ -29,8 +29,10 @@
     [self.location requestWhenInUseAuthorization];
     self.actualMap.showsUserLocation = YES;
     
-    [self UpdateMap];
+    self.data = [[DataModel alloc] init];
+    
     [self Markers];
+    [self UpdateMap];
     
 }
 
@@ -67,14 +69,26 @@
 }
 
 -(void)Markers{
-    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
     
-    CLLocationCoordinate2D cords = CLLocationCoordinate2DMake(53.826682, -1.555033);
+    int loopcount = 0;
     
-    annotation.title = @"Test Location";
-    annotation.coordinate = cords;
-    
-    [self.actualMap addAnnotation:annotation];
+    for (loopcount = 0; loopcount < self.data.hubs.count; loopcount++) {
+        
+        Hub *tempHub = self.data.hubs[loopcount];
+        
+        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+        
+        CLLocationCoordinate2D cords = CLLocationCoordinate2DMake(tempHub.longitude, tempHub.latitude);
+        
+        annotation.title = tempHub.name;
+        annotation.coordinate = cords;
+        
+        NSLog(@"MARKERS");
+        NSLog(@"%i", loopcount);
+        
+        
+        [self.actualMap addAnnotation:annotation];
+    }
 }
 
 @end

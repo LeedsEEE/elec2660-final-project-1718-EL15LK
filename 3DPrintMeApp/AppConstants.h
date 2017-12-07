@@ -24,6 +24,12 @@
 #define appRedColor UIColorFromHex(0xD44036)                        //red color defined for table view elements
 #define appGreenColor UIColorFromHex(0x34983E)                      //green color defined for table view elements
 
+#pragma mark Costs
+
+#define fdmcost 0.60
+#define slacost 2.10
+#define slscost 7.32
+
 
 // REFERENCES
 
